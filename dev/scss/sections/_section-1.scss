@@ -2,8 +2,68 @@
     Section 1
 ============= */
 #section-1{
-    .grid-content{
-        
+
+    @include xl {
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". section-1 .";
     }
+
+    div{
+        grid-area: section-1;
+
+        background-image: url('../img/section-1/track-hero.jpg');
+        background-position: center;
+        background-size: cover;
+        height: 400px;
+
+        @include md{
+            height: 500px;
+        }
+
+        @include lg{
+            height: 800px;
+        }
+
+        @include xl{
+            max-height: 1400px;
+        }
+
+        h1{
+            font-size: rem-calc(30);
+            line-height: rem-calc(40);
+            text-align: center;
+            width: 200px;
+
+            padding-top: 60px;
+            margin-left: 20px;
+
+            @include md{
+                font-size: rem-calc(40);
+                line-height: rem-calc(50);
+                width: 300px;
+
+                padding-top: 80px;
+                margin-left: 70px;
+            }
+
+            @include lg{
+                font-size: rem-calc(50);
+                line-height: rem-calc(60);
+                width: 400px;
+
+                padding-top: 100px;
+                margin-left: 70px;
+            }
+
+            @include xl{
+                width: 700px;
+
+                margin-left: 20px;
+            }
+
+        }
+
+    }
+ 
 
 }

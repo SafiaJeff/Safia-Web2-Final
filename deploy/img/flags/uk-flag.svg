@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="102px" height="51px" viewBox="0 0 102 51" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>UK Flag</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile" transform="translate(-185.000000, -1866.000000)">
+            <g id="Design" transform="translate(-41.000000, 0.000000)">
+                <g id="6-Drivers" transform="translate(0.000000, 1558.000000)">
+                    <g id="Hamilton" transform="translate(0.000000, 134.000000)">
+                        <g id="right" transform="translate(191.000000, 0.000000)">
+                            <g id="UK-Flag" transform="translate(35.000000, 174.000000)">
+                                <polygon id="Fill-1" fill="#FFFFFF" points="0 51 102 51 102 0 0 0"></polygon>
+                                <polygon id="Fill-2" fill="#CF142B" points="45.8995408 0 45.8995408 20.3889148 0 20.3889148 0 30.5842223 45.8995408 30.5842223 45.8995408 51 56.1004592 51 56.1004592 30.5842223 102 30.5842223 102 20.3889148 56.1004592 20.3889148 56.1004592 0"></polygon>
+                                <polygon id="Fill-3" fill="#00247D" points="59 0 59 17 92 0"></polygon>
+                                <polygon id="Fill-4" fill="#00247D" points="59 51 92 51 59 34"></polygon>
+                                <polygon id="Fill-5" fill="#00247D" points="10 51 43 51 43 34"></polygon>
+                                <polygon id="Fill-6" fill="#00247D" points="10 0 43 17 43 0"></polygon>
+                                <polygon id="Fill-7" fill="#00247D" points="0 17 24 17 0 4"></polygon>
+                                <polygon id="Fill-8" fill="#00247D" points="78 17 102 17 102 4"></polygon>
+                                <polygon id="Fill-9" fill="#00247D" points="78 34 102 47 102 34"></polygon>
+                                <polygon id="Fill-10" fill="#00247D" points="0 34 0 47 24 34"></polygon>
+                                <polygon id="Fill-11" fill="#CF142B" points="96.377396 0 63 17 68.5700907 17 102 0"></polygon>
+                                <polygon id="Fill-12" fill="#CF142B" points="38.9471527 34 33.3771098 34 0 51 5.57037736 51 39 34"></polygon>
+                                <polygon id="Fill-13" fill="#CF142B" points="0 0 0 2.84901965 28.3335035 17 34 17"></polygon>
+                                <polygon id="Fill-14" fill="#CF142B" points="68 34 101.99966 51 102 48.1512632 73.6668368 34"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
