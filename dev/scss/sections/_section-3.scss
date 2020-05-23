@@ -2,6 +2,53 @@
     Section 3
 ============= */
 #section-3{
-    
+
+    @include xl{
+        display: grid;
+        grid-template-columns: auto 1200px auto;
+        grid-template-areas: ". s3 .";
+
+        line-height: rem-calc(32);
+        font-size: rem-calc(20);
+    }
+
+    background-color: $gray;
+
+    div{
+        grid-area: s3;
+        color: $white;
+
+        p{
+            line-height: rem-calc(32);
+            font-size: rem-calc(20);
+            text-align: justify;
+
+            padding: 30px 10px;
+
+            span{
+                display: none;
+                
+            }
+
+            @include md{
+                padding: 60px 30px;
+
+                line-height: rem-calc(40);
+                font-size: rem-calc(21);
+
+                span{
+                    display: inline !important;
+                }
+            }
+
+            @include lg{
+                padding: 100px 130px;
+
+                line-height: rem-calc(50);
+                font-size: rem-calc(25);
+            }
+
+        }
+    }
 
 }

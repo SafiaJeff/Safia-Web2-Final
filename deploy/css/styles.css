@@ -393,18 +393,92 @@ textarea {
 /* =============
     Navigation
 ============= */
+ul {
+  height: 100%; }
+  ul li {
+    padding-bottom: 15px; }
+    ul li a:link,
+    ul li a:visited {
+      color: #E92626;
+      text-decoration: none; }
+      @media (min-width: 768px) {
+        ul li a:link,
+        ul li a:visited {
+          color: #fff; } }
+    ul li a:hover,
+    ul li a:active {
+      color: #000; }
+
 /* =============
     Header
 ============= */
-header {
-  background-color: #E92626;
+#header {
   left: 0;
   top: 0;
   width: 100%;
-  position: fixed; }
-  header div {
-    background-color: #000; }
-
+  position: fixed;
+  background-color: #E92626; }
+  #header div {
+    display: grid;
+    grid-template-areas: "logo burger" "nav nav";
+    grid-template-columns: auto auto; }
+    @media (min-width: 768px) {
+      #header div {
+        grid-template-areas: "logo nav";
+        grid-template-areas: 16% auto; } }
+    #header div #logo-container {
+      grid-area: logo;
+      padding: 25px; }
+      #header div #logo-container img {
+        height: 30px; }
+        @media (min-width: 768px) {
+          #header div #logo-container img {
+            height: 40px; } }
+        @media (min-width: 992px) {
+          #header div #logo-container img {
+            height: 55px; } }
+    #header div #burger-container {
+      display: flex;
+      align-items: center;
+      padding-left: 90px; }
+      #header div #burger-container i {
+        cursor: pointer;
+        font-size: 1.875rem;
+        color: #fff; }
+      @media (min-width: 768px) {
+        #header div #burger-container {
+          display: none !important; } }
+    #header div #nav-container {
+      grid-area: nav;
+      padding: 30px;
+      background-color: #fff;
+      text-align: end;
+      display: none;
+      border-bottom: 10px #E92626 solid; }
+      #header div #nav-container #hide-home {
+        display: none; }
+      @media (min-width: 768px) {
+        #header div #nav-container {
+          display: block !important;
+          border-bottom: none;
+          background-color: #E92626; }
+          #header div #nav-container #hide-home {
+            display: block !important; }
+          #header div #nav-container ul {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 10px; }
+            #header div #nav-container ul li {
+              flex: 1;
+              padding: 0px 25px; } }
+      @media (min-width: 992px) {
+        #header div #nav-container ul {
+          margin-top: 15px; }
+          #header div #nav-container ul li {
+            margin-right: 70px; } }
+      @media (min-width: 1200px) {
+        #header div #nav-container ul li {
+          margin-right: 130px; } }
 /* =============
     Footer
 ============= */
@@ -424,10 +498,12 @@ header {
   height: 400px; }
   @media (min-width: 768px) {
     #section-1 div {
-      height: 500px; } }
+      height: 500px;
+      margin-top: 80px; } }
   @media (min-width: 992px) {
     #section-1 div {
-      height: 800px; } }
+      height: 800px;
+      margin-top: 100px; } }
   @media (min-width: 1200px) {
     #section-1 div {
       max-height: 1400px; } }
@@ -436,8 +512,9 @@ header {
     line-height: 2.5rem;
     text-align: center;
     width: 200px;
-    padding-top: 60px;
-    margin-left: 20px; }
+    padding-top: 50px;
+    margin-left: 20px;
+    margin-top: 80px; }
     @media (min-width: 768px) {
       #section-1 div h1 {
         font-size: 2.5rem;
@@ -487,9 +564,88 @@ header {
 /* =============
     Section 3
 ============= */
+#section-3 {
+  background-color: #373737; }
+  @media (min-width: 1200px) {
+    #section-3 {
+      display: grid;
+      grid-template-columns: auto 1200px auto;
+      grid-template-areas: ". s3 .";
+      line-height: 2rem;
+      font-size: 1.25rem; } }
+  #section-3 div {
+    grid-area: s3;
+    color: #fff; }
+    #section-3 div p {
+      line-height: 2rem;
+      font-size: 1.25rem;
+      text-align: justify;
+      padding: 30px 10px; }
+      #section-3 div p span {
+        display: none; }
+      @media (min-width: 768px) {
+        #section-3 div p {
+          padding: 60px 30px;
+          line-height: 2.5rem;
+          font-size: 1.3125rem; }
+          #section-3 div p span {
+            display: inline !important; } }
+      @media (min-width: 992px) {
+        #section-3 div p {
+          padding: 100px 130px;
+          line-height: 3.125rem;
+          font-size: 1.5625rem; } }
 /* =============
     Section 4
 ============= */
+@media (min-width: 1200px) {
+  #section-4 {
+    display: grid;
+    grid-template-columns: auto 1000px auto;
+    grid-template-areas: ". s4 ."; } }
+
+#section-4 div {
+  grid-area: s4;
+  padding: 30px 0px; }
+  @media (min-width: 768px) {
+    #section-4 div {
+      display: grid;
+      grid-template-columns: 475px auto;
+      grid-template-areas: "img text";
+      padding: 60px 0px; } }
+  @media (min-width: 992px) {
+    #section-4 div {
+      padding: 100px 0px; } }
+  #section-4 div aside {
+    grid-area: img;
+    background-image: url("../img/Section-4/cars-profile.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 400px; }
+    @media (min-width: 1200px) {
+      #section-4 div aside {
+        width: 600px; } }
+  #section-4 div section {
+    grid-area: text; }
+    #section-4 div section p {
+      font-size: 1.125rem;
+      line-height: 1.4375rem;
+      text-align: justify;
+      padding: 0px 60px;
+      padding-top: 30px; }
+      @media (min-width: 768px) {
+        #section-4 div section p {
+          padding: 100px 20px;
+          text-align: left; } }
+      @media (min-width: 992px) {
+        #section-4 div section p {
+          padding: 120px 100px;
+          max-width: 300px; } }
+      @media (min-width: 1200px) {
+        #section-4 div section p {
+          width: 300px;
+          padding-left: 200px;
+          padding-top: 130px; } }
 /* =============
     Section 6
 ============= */

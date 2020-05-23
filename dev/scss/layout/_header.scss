@@ -2,15 +2,157 @@
     Header
 ============= */
 
-header{
-    background-color: $red;
+#header{
     left: 0;
     top: 0;
     width: 100%;
     position: fixed;
 
+    background-color: $red;
+
     div{
-        background-color: $black;
+        display: grid;
+        grid-template-areas: "logo burger"
+                            "nav nav";
+        grid-template-columns: auto auto;
+
+        @include md{
+            grid-template-areas: "logo nav";
+            grid-template-areas: 16% auto;
+        }
+        
+
+        #logo-container{
+            grid-area: logo;
+            padding: 25px;
+
+            img{
+                height: 30px;
+
+                @include md{
+                    height: 40px;
+                }
+                
+                @include lg{
+                    height: 55px;
+                }
+            }
+        }
+
+        #burger-container{
+            display: flex;
+            align-items: center;
+
+            padding-left: 90px;
+
+            i{
+                cursor: pointer;
+                font-size: rem-calc(30);
+                color: $white;
+            }
+
+            @include md{
+                display: none !important; //turns off burger in large
+            }
+
+        }
+
+        #nav-container{
+            grid-area: nav;
+
+            padding: 30px;
+            background-color: $white;
+            text-align: end;
+            display: none;
+
+            border-bottom: 10px $red solid;
+
+            #hide-home{
+                display: none;
+            }
+
+            @include md{
+                display: block !important;
+                border-bottom: none;
+
+                background-color: $red;
+
+                #hide-home{
+                    display: block !important;
+                }
+                
+                ul{
+                    display: flex;
+                    justify-content: flex-start;
+                    margin-top: 10px;
+
+                    li{
+                        flex: 1;
+                        padding: 0px 25px;
+                    }
+                }
+
+            }
+
+            @include lg{
+                ul{
+                    margin-top: 15px;
+
+                    li{
+                        margin-right: 70px;
+                    }
+                }
+
+            }
+
+            @include xl{
+                ul{
+                    li{
+                        margin-right: 130px;
+                    }
+                }
+
+            }
+
+           
+
+
+        }
+
+
+
+
+        // display: flex;
+        
+
+        // #logo-container{
+        //     flex:1;
+
+        //     img{
+        //         height: 30px;
+        //     }
+            
+        // }
+
+        // #burger-container{
+        //     flex:1;
+        //     padding-left: 150px;
+
+        //     font-size: rem-calc(30);
+        //     color: $white;
+
+        //     i{
+        //         cursor: pointer; //changes cursor to hand
+        //         font-size: rem-calc(30);
+        //     }
+        // }
+
+
+        // #nav-container{
+        //     display: none;
+        // }
+
+        
 
 
 

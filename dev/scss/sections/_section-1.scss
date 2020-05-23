@@ -18,10 +18,12 @@
 
         @include md{
             height: 500px;
+            margin-top: 80px;
         }
 
         @include lg{
             height: 800px;
+            margin-top: 100px;
         }
 
         @include xl{
@@ -34,8 +36,9 @@
             text-align: center;
             width: 200px;
 
-            padding-top: 60px;
+            padding-top: 50px;
             margin-left: 20px;
+            margin-top: 80px;
 
             @include md{
                 font-size: rem-calc(40);
