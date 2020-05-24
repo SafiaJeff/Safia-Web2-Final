@@ -2,76 +2,81 @@
     Section 4
 ============= */
 #section-4{ 
-    @include xl{
-        display: grid;
-        grid-template-columns: auto 1000px auto;
-        grid-template-areas: ". s4 .";
-    }
+    #s4-container{
 
-    div{
-        grid-area: s4;
-
-        padding: 30px 0px;
-
-        @include md{
+        @include xl{
             display: grid;
-            grid-template-columns: 475px auto;
-            grid-template-areas: "img text";
-
-            padding: 60px 0px;
+            grid-template-columns: auto 1200px auto;
+            grid-template-areas: ". s4 .";
+            
         }
 
-        @include lg{
-            padding: 100px 0px;
-        }
+        #s4-content{
+            grid-area: s4;
 
+            padding: 30px 0px;
 
-        aside{
-            grid-area: img;
+            @include md{
+                display: grid;
+                grid-template-columns: 600px 1fr;
+                grid-template-areas: "img text";
 
-            background-image: url('../img/Section-4/cars-profile.jpg');
-            background-position: center;
-            background-size: cover;
-            height: 400px;
+                padding: 60px 0px;
+            }
+
+            @include lg{
+                padding: 100px 50px;
+            }
 
             @include xl{
-                width: 600px;
+                padding: 100px 0px 100px 100px;
             }
-        }
 
-        section{
-            grid-area: text;
 
-            p{
-                font-size: rem-calc(18);
-                line-height: rem-calc(23);
+            aside{
+                grid-area: img;
 
-                text-align: justify;
-                padding: 0px 60px;
-                padding-top: 30px;
-
-                @include md{
-                    padding: 100px 20px;
-                    text-align: left;
-                }
-
-                @include lg{
-                    padding: 120px 100px;
-                    max-width: 300px;
-                }
-
-                @include xl{
-                    width: 300px;
-
-                    padding-left: 200px;
-                    padding-top: 130px;
-                }
-                 
-
+                background-image: url('../img/Section-4/cars-profile.jpg');
+                background-position: center;
+                background-size: cover;
+                height: 400px;
             }
+
+            section{
+                grid-area: text;
+
+                p{
+                    font-size: rem-calc(18);
+                    line-height: rem-calc(23);
+
+                    text-align: justify;
+                    padding: 0px 60px;
+                    padding-top: 30px;
+
+                    @include md{
+                        padding: 100px 20px;
+                        text-align: left;
+                    }
+
+                    @include lg{
+                        padding: 100px 50px;
+                        max-width: 300px;
+                    }
+
+                    @include xl{
+                       
+                        padding-left: 100px;
+                        padding-top: 130px;
+                        padding-right: 0px;
+                    
+                    }
+                    
+
+                }
+            }
+
+
         }
-
-
     }
 
 

@@ -372,6 +372,28 @@ p {
 .section-title {
   font-weight: 300; }
 
+.button p {
+  font-family: default-gothic, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.125rem;
+  background-color: #fff;
+  border-radius: 2px;
+  color: #E92626;
+  text-align: center;
+  padding: 10px 20px;
+  margin: 0px; }
+
+.button a:link,
+.button a:visited {
+  color: #E92626;
+  text-decoration: none; }
+
+.button a:hover,
+.button a:active {
+  color: #B72426;
+  text-decoration: none; }
+
 /* =============
     Buttons
 ============= */
@@ -599,53 +621,99 @@ ul {
     Section 4
 ============= */
 @media (min-width: 1200px) {
-  #section-4 {
+  #section-4 #s4-container {
     display: grid;
-    grid-template-columns: auto 1000px auto;
+    grid-template-columns: auto 1200px auto;
     grid-template-areas: ". s4 ."; } }
 
-#section-4 div {
+#section-4 #s4-container #s4-content {
   grid-area: s4;
   padding: 30px 0px; }
   @media (min-width: 768px) {
-    #section-4 div {
+    #section-4 #s4-container #s4-content {
       display: grid;
-      grid-template-columns: 475px auto;
+      grid-template-columns: 600px 1fr;
       grid-template-areas: "img text";
       padding: 60px 0px; } }
   @media (min-width: 992px) {
-    #section-4 div {
-      padding: 100px 0px; } }
-  #section-4 div aside {
+    #section-4 #s4-container #s4-content {
+      padding: 100px 50px; } }
+  @media (min-width: 1200px) {
+    #section-4 #s4-container #s4-content {
+      padding: 100px 0px 100px 100px; } }
+  #section-4 #s4-container #s4-content aside {
     grid-area: img;
     background-image: url("../img/Section-4/cars-profile.jpg");
     background-position: center;
     background-size: cover;
     height: 400px; }
-    @media (min-width: 1200px) {
-      #section-4 div aside {
-        width: 600px; } }
-  #section-4 div section {
+  #section-4 #s4-container #s4-content section {
     grid-area: text; }
-    #section-4 div section p {
+    #section-4 #s4-container #s4-content section p {
       font-size: 1.125rem;
       line-height: 1.4375rem;
       text-align: justify;
       padding: 0px 60px;
       padding-top: 30px; }
       @media (min-width: 768px) {
-        #section-4 div section p {
+        #section-4 #s4-container #s4-content section p {
           padding: 100px 20px;
           text-align: left; } }
       @media (min-width: 992px) {
-        #section-4 div section p {
-          padding: 120px 100px;
+        #section-4 #s4-container #s4-content section p {
+          padding: 100px 50px;
           max-width: 300px; } }
       @media (min-width: 1200px) {
-        #section-4 div section p {
-          width: 300px;
-          padding-left: 200px;
-          padding-top: 130px; } }
+        #section-4 #s4-container #s4-content section p {
+          padding-left: 100px;
+          padding-top: 130px;
+          padding-right: 0px; } }
+/* =============
+    Section 5
+============= */
+#section-5 #s5-content {
+  background-color: #373737;
+  color: #fff;
+  padding-top: 30px;
+  padding-bottom: 30px; }
+  #section-5 #s5-content #title-strip-ham {
+    background-color: #FCC424;
+    padding: 30px 0px; }
+    #section-5 #s5-content #title-strip-ham h1 {
+      text-align: center; }
+  #section-5 #s5-content #drivers #Hamilton {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "img txt"; }
+    #section-5 #s5-content #drivers #Hamilton #ham-left {
+      grid-area: img;
+      background-image: url("../img/section-5/lewis.png");
+      background-position: center;
+      background-size: cover;
+      height: 270px;
+      background-position-y: 15px;
+      background-repeat: no-repeat;
+      background-color: #D9D9D9;
+      margin-top: 30px; }
+    #section-5 #s5-content #drivers #Hamilton #ham-right {
+      grid-area: txt;
+      background-color: #fff;
+      color: #000;
+      text-align: center;
+      margin-top: 30px;
+      padding-top: 40px; }
+      #section-5 #s5-content #drivers #Hamilton #ham-right #hm {
+        padding-top: 40px;
+        padding-bottom: 30px; }
+    #section-5 #s5-content #drivers #Hamilton #ham-table {
+      display: none; }
+  #section-5 #s5-content #drivers #Bottas {
+    display: none; }
+  #section-5 #s5-content #drivers #Verstappen {
+    display: none; }
+  #section-5 #s5-content .button {
+    margin-top: 30px; }
+
 /* =============
     Section 6
 ============= */

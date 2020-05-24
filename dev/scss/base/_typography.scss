@@ -39,6 +39,43 @@ p{
     font-weight: 300;
 }
 
+.button{
+    
+
+    p{
+        font-family: default-gothic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: rem-calc(18);
+
+        // width: 85px;
+
+        background-color: $white;
+        border-radius: 2px;
+        color: $red;
+        text-align: center;
+
+        padding: 10px 20px;
+        margin: 0px;
+        
+        
+    }
+
+    a:link,
+    a:visited{
+        color: $red;
+        text-decoration: none;
+    }
+
+    a:hover,
+    a:active{
+        color: $dark-red;
+        text-decoration: none;
+    }
+
+}
+
+
 
 // DefaultGothic OT BGauge
 
