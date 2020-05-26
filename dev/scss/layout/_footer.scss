@@ -1,3 +1,63 @@
 /* =============
     Footer
 ============= */
+    
+#footer{
+    div{
+        background-color: $gray;
+
+        padding: 20px 10px 15px 10px;
+        
+
+        #icons-logo{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-areas: "icons logo";
+            grid-gap: 20px;
+
+            img{
+                grid-area: logo;
+                height: 30px;
+
+            }
+
+            #social-icons{
+                grid-area: icons;
+
+                display: flex;
+
+                li{
+                    flex: 1;
+                }
+
+                a{
+                    color: $white;
+                    font-size: rem-calc(25);
+                }
+
+
+            }
+
+
+
+
+        }
+
+        #footer-text{
+            span{
+                font-weight: bold;
+            }
+
+            color: $white;
+            line-height: rem-calc(30);
+
+        }
+
+
+
+
+
+
+
+    }
+}

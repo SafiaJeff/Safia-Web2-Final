@@ -2,6 +2,60 @@
     Section 7
 ============= */
 #section-7{
+    div{
+        #bg-7{
+            background-image: url('../img/section-7/racing-car.jpg');
+            background-position: center;
+            background-size: cover;
+            height: 200px;
+
+        }
+
+        #title-strip-tix{
+            h1{
+                text-align: center;
+                color: $white;
+            }
+
+            background-color: $red;
+            padding: 30px 0px 30px 0px;
+            
+        }
+
+        #table-and-button{
+            background-color: $gray;
+            padding-bottom: 40px;
+
+            #tickets-table{
+                color: $white;
+    
+                #tix, #money{
+                    font-size: rem-calc(25);
+                }
+
+                #money{
+                    text-align: center;
+                }
+        
+                table { 
+                    border-spacing: 20px 30px;
+                    border-collapse: separate;
+    
+                    line-height: rem-calc(20); 
+                }
+            }
+
+        }
+
+        
+
+
+
+
+
+
+    }
+
 
 
 }

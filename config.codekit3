@@ -123,12 +123,12 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Section-7/man-in-car.jpg": {
+	"/deploy/img/Section-6/man-in-car.jpg": {
 		"ft": 16384,
 		"iS": 493135,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Section-7/man-in-car.jpg",
+		"oAP": "/deploy/img/Section-6/man-in-car.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -145,67 +145,67 @@
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Section-9/boats.jpg": {
-		"ft": 16384,
-		"iS": 569066,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Section-9/boats.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Section-9/car-gallery.jpg": {
-		"ft": 16384,
-		"iS": 93545,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Section-9/car-gallery.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Section-9/monaco.jpg": {
+	"/deploy/img/Section-9/gallery-1.jpg": {
 		"ft": 16384,
 		"iS": 913337,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Section-9/monaco.jpg",
+		"oAP": "/deploy/img/Section-9/gallery-1.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"/deploy/img/Section-9/pineapple.jpg": {
-		"ft": 16384,
-		"iS": 203166,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Section-9/pineapple.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Section-9/resort.jpg": {
-		"ft": 16384,
-		"iS": 245531,
-		"jF": 0,
-		"oA": 0,
-		"oAP": "/deploy/img/Section-9/resort.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"/deploy/img/Section-9/wine.jpg": {
+	"/deploy/img/Section-9/gallery-2.jpg": {
 		"ft": 16384,
 		"iS": 211110,
 		"jF": 0,
 		"oA": 0,
-		"oAP": "/deploy/img/Section-9/wine.jpg",
+		"oAP": "/deploy/img/Section-9/gallery-2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Section-9/gallery-3.jpg": {
+		"ft": 16384,
+		"iS": 93545,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section-9/gallery-3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Section-9/gallery-4.jpg": {
+		"ft": 16384,
+		"iS": 569066,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section-9/gallery-4.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Section-9/gallery-5.jpg": {
+		"ft": 16384,
+		"iS": 203166,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section-9/gallery-5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"/deploy/img/Section-9/gallery-6.jpg": {
+		"ft": 16384,
+		"iS": 245531,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "/deploy/img/Section-9/gallery-6.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

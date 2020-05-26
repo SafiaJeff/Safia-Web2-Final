@@ -2,6 +2,49 @@
     Section 8
 ============= */
 #section-8{
+    #section-8-content{
+
+        background-color: $blue;
+        padding: 30px 10px;
+
+        #section-8-grid{
+
+            display: grid;
+            grid-template-columns: 20% 80%;
+            grid-template-rows: auto auto;
+            grid-template-areas: "vip ."
+                                ". text";
+
+            #vip-title{
+                grid-area: vip;
+            }
+                
+            #vip-body-text{
+                grid-area: text;
+
+                max-width: 250px;
+                padding-bottom: 30px;
+
+                p{
+                    line-height: 20px;
+                }   
+
+            }
+            
+        }
+
+        .white-button{
+            padding-bottom: 10px;
+        }
+        
+        
+
+    
+
+
+
+
+    }
 
 
 }
