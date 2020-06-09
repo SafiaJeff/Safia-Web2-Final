@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- Google Font -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Armata&family=Days+One&display=swap" rel="stylesheet">
     <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/3c79b583ac.js?ckcachebust=612224549" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3c79b583ac.js?ckcachebust=613000073" crossorigin="anonymous"></script>
     <!-- Adobe Font -->
-    <link rel="stylesheet" href="https://use.typekit.net/afb4wnr.css?ckcachebust=612224549">
+    <link rel="stylesheet" href="https://use.typekit.net/afb4wnr.css?ckcachebust=613000073">
 
-    <link rel="stylesheet" href="css/styles.css?ckcachebust=b51015f5c4a1d686170c6c5c0226e712">
+    <link rel="stylesheet" href="css/styles.css?ckcachebust=ded0f66cb935737ef68c161c5ddea53e">
     
 </head>
 
@@ -93,65 +93,79 @@
                                     <h1>DRIVERS</h1>
                                 </div>
                         
-                                <div id="drivers">
+                                <section id="drivers">
                         
                                     <div id="Hamilton">
                                         <div id="ham-left"></div>
                         
                                         <div id="ham-right">
-                                            <div id="ham-mobile">
-                                                <p>Lewis <br>HAMILTON</p>
-                                                <p id="hm">Mercedes</p>
-                                                <img src="img/flags/uk-flag.png">
-                                            </div>
-                                            
-                                            <div id="ham-table">
-                                                <table>
-                                                    <tr>
-                                                    <td>Podiums</th>
-                                                    <td>151</th>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>Points</td>
-                                                    <td>3431</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>Grands Prix Entered</td>
-                                                    <td>250</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>World Championships</td>
-                                                    <td>6</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>Highest Race Finish</td>
-                                                    <td>1 (x84)</td>
-                                                    </tr>
-                                                    <tr>
-                                                    <td>Highest Grid Position</td>
-                                                    <td>1</td>
-                                                    </tr>
-                                                </table> 
-                                            </div>
+                                            <p id="name-tag">Lewis <span id="name-break">HAMILTON</span></p>
+                                            <p id="mercedes">Mercedes<span id="UK">; United Kingdom</span></p>
+                                            <img src="img/flags/uk-flag.png">
                                             
                                         </div>
+                                            
+                                        <div id="ham-table">
+                                            <img src="img/flags/uk-flag.png">
+                                            <table>
+                                                <tr>
+                                                <td class="bold-text">Podiums</th>
+                                                <td class="text-right">151</th>
+                                                </tr>
+                                                <tr>
+                                                <td class="bold-text">Points</td>
+                                                <td class="text-right">3431</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="bold-text">Grands Prix Entered</td>
+                                                <td class="text-right">250</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="bold-text">World Championships</td>
+                                                <td class="text-right">6</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="bold-text">Highest Race Finish</td>
+                                                <td class="text-right">1 (x84)</td>
+                                                </tr>
+                                                <tr>
+                                                <td class="bold-text">Highest Grid Position</td>
+                                                <td class="text-right">1</td>
+                                                </tr>
+                                            </table> 
+                                        </div>
+                                            
+                                        
                                     </div>
                         
                                     <div id="Bottas">
-                                        <p>Valterri BOTTAS</p>
-                                        <p>Finland; Mercedes</p>
-                                        <img src="img/flags/finland.png">
-                                        <img>
+                                        <div id="bottas-top">
+                                            <div id="bottas-bg">
+                                                <img id="finland-flag" src="img/flags/finland.png">
+                                                <!-- <img id="bottas-img" src="img/Section-5/lewis.png"> -->
+                                                <div id="bottas-img"></div>
+                                            </div>
+                                        </div>
+                        
+                                        <div id="bottas-bottom">
+                                            <p class="xl-name">Valterri BOTTAS</p>
+                                            <p class="xl-info">Finland; Mercedes</p>
+                                        </div>
                                     </div>
                         
                                     <div id="Verstappen">
-                                        <p>Max VERSTAPPEN</p>
-                                        <p>Red Bull; Netherlands</p>
-                                        <img src="img/flags/netherlands.png">
-                                        <img>
+                                        <div id="vers-top">
+                                            <img src="img/flags/netherlands.png">
+                                            <img>
+                                        </div>
+                        
+                                        <div id="vers-bottom">
+                                            <p class="xl-name">Max VERSTAPPEN</p>
+                                            <p class="xl-info">Red Bull; Netherlands</p>
+                                        </div>
                                     </div>
                                 
-                                </div>
+                                </section>
                         
                                 <div class="white-button">
                                     <a href='#' class="button-link">Read More</a>
@@ -186,11 +200,11 @@
                                         
                                         <div id="circuit-bottom-txt">
                                           <p class="bold-text" >2018 Winner</p>
-                                          <p class="text-right" >Daniel Ricciardo (Red Bull)</p>
-                                          <p class="text-right">1:42:54.807</p>
+                                          <p class="text-right" >Daniel Ricciardo (Red Bull)<br class="no-break"> 1:42:54.807</p>
+                                          <!-- <p class="text-right">1:42:54.807</p> -->
                                           <p class="bold-text">Fastest Lap 2018</p>
-                                          <p class="text-right">Max Verstappen (Red Bull)</p>
-                                          <p class="text-right">1:14.260</p>
+                                          <p class="text-right">Max Verstappen (Red Bull)<br class="no-break"> 1:14.260</p>
+                                          <!-- <p class="text-right">1:14.260</p> -->
                                         </div>
                             
                                     </section>
@@ -199,55 +213,97 @@
                                 
                             </section>
     <section id="section-7">
-                                    <div>
-                                        <div id="bg-7"></div>
+                                  <div>
+                                    <div id="bg-7">
                                 
-                                        <div id="title-strip-tix">
-                                            <h1>TICKETS</h1>
-                                        </div>
+                                      <div id="title-strip-tix">
+                                        <h1>TICKETS</h1>
+                                      </div>
+                                
+                                      <div id="table-grid">
                                         
                                         <div id="table-and-button">
                                           <div id="tickets-table">
-                                              <table style="width:100%">
-                                                  <tr>
-                                                    <span><td class="bold-text" id="tix">TICKET</th></span>
-                                                    <span><td class="bold-text" id="money">[$]</th></span>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>A 1 - Place Sainte-Devote
-                                                3 days</td>
-                                                    <td class="text-right">$995</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>A 1 - Place Sainte-Devote
-                                                2 days</td>
-                                                    <td class="text-right">$904</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>A 1 - Place Sainte-Devote
-                                                Sunday Only</td>
-                                                    <td class="text-right">$692</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>A 1 - Place Sainte-Devote
-                                                Saturday Only</td>
-                                                    <td class="text-right">$314</td>
-                                                  </tr>
-                                                  <tr>
-                                                    <td>A 1 - Place Sainte-Devote
-                                                Thursday Only</td>
-                                                    <td class="text-right">$94</td>
-                                                  </tr>
-                                                </table> 
+                                            <table style="width:100%">
+                                              <tr>
+                                                <span><td class="bold-text" id="tix">TICKET</th></span>
+                                                <span><td class="bold-text" id="money"><span id="price">PRICE</span> [$]</th></span>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>A 1 - Place Sainte-Devote</p>
+                                                  <p>3 days</p>
+                                                </td>
+                                                <td class="text-right">$995</td>
+                                                <td class="hide-buttons">
+                                                  <div class="sold-out-button">
+                                                    <a href='#' class="button-link" class="table-button">SOLD OUT</a>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p class="ticket-name">A 1 - Place Sainte-Devote</p>
+                                                  <p>2 days</p>
+                                                </td>
+                                                <td class="text-right">$904</td>
+                                                <td class="hide-buttons">
+                                                  <div class="red-button" class="table-button">
+                                                    <a href='#' class="button-link">BUY</a>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>A 1 - Place Sainte-Devote</p>
+                                                  <p>Sunday Only</p>
+                                                </td>
+                                                <td class="text-right">$692</td>
+                                                <td class="hide-buttons">
+                                                  <div class="red-button" class="table-button">
+                                                    <a href='#' class="button-link">BUY</a>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>A 1 - Place Sainte-Devote</p>
+                                                  <p>Saturday Only</p>
+                                                </td>
+                                                <td class="text-right">$314</td>
+                                                <td class="hide-buttons">
+                                                  <div class="sold-out-button" class="table-button">
+                                                    <a href='#' class="button-link">SOLD OUT</a>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>A 1 - Place Sainte-Devote</p>
+                                                  <p>Thursday Only</p>
+                                                </td>
+                                                <td class="text-right">$94</td>
+                                                <td class="hide-buttons">
+                                                  <div class="red-button" class="table-button">
+                                                    <a href='#' class="button-link">BUY</a>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </table> 
                                           </div>
                                 
-                                          <div class="red-button">
+                                          <div class="red-button" id="red-button-7">
                                             <a href='#' class="button-link">BUY</a>
                                           </div>
                                         </div>
+                                      </div>
+                                
+                                      
                                 
                                     </div>
-                                    
+                                
+                                  </div>
+                                
                                 </section>
     <section id="section-8">
                                         <div id="section-8-content">
@@ -277,7 +333,7 @@
                                             <div id="gallery">
                                         
                                                 <ul> <!-- ref wk4 tues responsive-->
-                                                    <li id="gallery-1"></li>
+                                                    <li id="gallery-1"><p>Experience the finest hospitality at the Monaco Grand Prix!</p></li>
                                                     <li id="gallery-2"></li>
                                                     <li id="gallery-3"></li> 
                                                     <li id="gallery-4"></li>
@@ -285,7 +341,7 @@
                                                     <li id="gallery-6"></li>
                                                 </ul>
                                         
-                                                <p>Experience the finest hospitality at the Monaco Grand Prix!</p>
+                                                
                                                 
                                             </div>
                                         </section>
@@ -320,11 +376,11 @@
                                             </section>
 
     <!-- jQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js?ckcachebust=612224549"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js?ckcachebust=613000073"></script>
     <!-- Greensock -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js?ckcachebust=612224549"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js?ckcachebust=613000073"></script>
 
-    <script src="js/scripts-min.js?ckcachebust=fbd0ba5144ff7fdc8ea5800a1a6d5ce5"></script>
+    <script src="js/scripts-min.js?ckcachebust=2c628af1e3de15274e9d344df75d010e"></script>
 </body>
 
 </html>

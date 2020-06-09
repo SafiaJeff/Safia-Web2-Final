@@ -3,12 +3,20 @@
 ============= */
 body{
     font-family: 'armata', sans-serif;
-    font-size: rem-calc(16s);
+    font-size: rem-calc(16);
 }
 
 h1{
     font-family: 'Days One', sans-serif;
     font-size: rem-calc(35);
+
+    @include md{
+        font-size: rem-calc(38);
+    }
+
+    @include lg{
+        font-size: rem-calc(55);
+    }
 }
 
 h2{
@@ -36,6 +44,12 @@ h1,h2,h3,h4{
 p{
     margin: 0;
     padding: 0;
+
+    font-family: default-gothic, sans-serif;
+
+    font-weight: 300;
+
+    font-style: normal;
 }
 
 .section-title{
@@ -81,6 +95,7 @@ p{
 .red-button{
     
     text-align: center;
+    
 
     a{
         font-family: default-gothic, sans-serif;
@@ -111,6 +126,47 @@ p{
 
 }
 
+.sold-out-button{
+
+    text-align: center;
+    border: solid .5px $white;
+    border-radius: 2px;
+    padding: 8px 2px;
+
+    
+
+    a{
+        font-family: default-gothic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+        font-size: rem-calc(18);
+       
+
+
+        background-color: $gray;
+        color: $white;
+        
+        
+        
+        
+    }
+
+    a:link,
+    a:visited{
+        color: $white;
+        text-decoration: none;
+    }
+
+    a:hover,
+    a:active{
+        background-color: $gray;
+        text-decoration: none;
+    }
+
+
+
+}
+
 .bold-text{   
    font-size: rem-calc(18);
 
@@ -120,15 +176,51 @@ p{
 
     font-style: normal;
 
+
+}
+
+#section-5{
+    #name-tag{
+        @include md{
+            
+            font-family: default-gothic, sans-serif;
+            font-weight: 600;
+            font-style: normal;
+            
+        }
+
+    }
+
+    #mercedes{
+        font-family: 'armata', sans-serif;
+        font-size: rem-calc(16);
+    }
+
+    .xl-name{
+        font-size: rem-calc(26);
+        text-align: center;
+
+        font-family: default-gothic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+
+        padding-top: 30px;
+    }
+
+    .xl-info{
+        font-size: rem-calc(18);
+        font-family: 'armata', sans-serif;
+        text-align: center;
+
+        padding-top: 15px;
+        padding-bottom: 35px;
+    }
 }
 
 #section-6{
     font-family: default-gothic, sans-serif;
-
     font-weight: 300;
-
     font-style: normal;
-
     font-size: rem-calc(18);
 
 }
@@ -140,9 +232,46 @@ p{
 #section-7{
     .text-right{
         text-align: left;
+        padding-bottom: 15px;
+
+        @include md{
+            text-align: center;
+        }
+    }
+
+    p{
+        font-size: rem-calc(16);
+        font-family: 'armata', sans-serif;
+
+        @include md{
+            font-size: rem-calc(17);
+        }
     }
 }
 
+#section-8{
+    #vip-body-text{
+    font-family: 'armata', sans-serif; 
+    }
+
+    @include md{
+       p{ 
+        font-size: rem-calc(18); 
+        font-family: 'armata', sans-serif; 
+       }
+    }
+    
+    
+}
+
+#section-9{
+    p{
+        font-size: rem-calc(32);
+        line-height: rem-calc(43);
+        color: $white;
+        font-family: 'armata', sans-serif;
+    }
+}
 
 
 

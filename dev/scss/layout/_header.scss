@@ -18,7 +18,7 @@
 
         @include md{
             grid-template-areas: "logo nav";
-            grid-template-areas: 16% auto;
+            grid-template-columns: 26% auto;
         }
         
 
@@ -99,10 +99,6 @@
             @include lg{
                 ul{
                     margin-top: 15px;
-
-                    li{
-                        margin-right: 70px;
-                    }
                 }
 
             }

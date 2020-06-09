@@ -349,7 +349,12 @@ body {
 h1 {
   font-family: 'Days One', sans-serif;
   font-size: 2.1875rem; }
-
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 2.375rem; } }
+  @media (min-width: 992px) {
+    h1 {
+      font-size: 3.4375rem; } }
 h2 {
   font-family: 'Armata', sans-serif; }
 
@@ -369,7 +374,10 @@ h1, h2, h3, h4 {
 
 p {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: default-gothic, sans-serif;
+  font-weight: 300;
+  font-style: normal; }
 
 .section-title {
   font-weight: 300; }
@@ -416,11 +424,57 @@ p {
     background-color: #B72426;
     text-decoration: none; }
 
+.sold-out-button {
+  text-align: center;
+  border: solid 0.5px #fff;
+  border-radius: 2px;
+  padding: 8px 2px; }
+  .sold-out-button a {
+    font-family: default-gothic, sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.125rem;
+    background-color: #373737;
+    color: #fff; }
+  .sold-out-button a:link,
+  .sold-out-button a:visited {
+    color: #fff;
+    text-decoration: none; }
+  .sold-out-button a:hover,
+  .sold-out-button a:active {
+    background-color: #373737;
+    text-decoration: none; }
+
 .bold-text {
   font-size: 1.125rem;
   font-family: default-gothic, sans-serif;
   font-weight: 600;
   font-style: normal; }
+
+@media (min-width: 768px) {
+  #section-5 #name-tag {
+    font-family: default-gothic, sans-serif;
+    font-weight: 600;
+    font-style: normal; } }
+
+#section-5 #mercedes {
+  font-family: 'armata', sans-serif;
+  font-size: 1rem; }
+
+#section-5 .xl-name {
+  font-size: 1.625rem;
+  text-align: center;
+  font-family: default-gothic, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-top: 30px; }
+
+#section-5 .xl-info {
+  font-size: 1.125rem;
+  font-family: 'armata', sans-serif;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 35px; }
 
 #section-6 {
   font-family: default-gothic, sans-serif;
@@ -432,7 +486,30 @@ p {
   text-align: right; }
 
 #section-7 .text-right {
-  text-align: left; }
+  text-align: left;
+  padding-bottom: 15px; }
+  @media (min-width: 768px) {
+    #section-7 .text-right {
+      text-align: center; } }
+#section-7 p {
+  font-size: 1rem;
+  font-family: 'armata', sans-serif; }
+  @media (min-width: 768px) {
+    #section-7 p {
+      font-size: 1.0625rem; } }
+#section-8 #vip-body-text {
+  font-family: 'armata', sans-serif; }
+
+@media (min-width: 768px) {
+  #section-8 p {
+    font-size: 1.125rem;
+    font-family: 'armata', sans-serif; } }
+
+#section-9 p {
+  font-size: 2rem;
+  line-height: 2.6875rem;
+  color: #fff;
+  font-family: 'armata', sans-serif; }
 
 /* =============
     Buttons
@@ -487,7 +564,7 @@ ul {
     @media (min-width: 768px) {
       #header div {
         grid-template-areas: "logo nav";
-        grid-template-areas: 16% auto; } }
+        grid-template-columns: 26% auto; } }
     #header div #logo-container {
       grid-area: logo;
       padding: 25px; }
@@ -536,9 +613,7 @@ ul {
               padding: 0px 25px; } }
       @media (min-width: 992px) {
         #header div #nav-container ul {
-          margin-top: 15px; }
-          #header div #nav-container ul li {
-            margin-right: 70px; } }
+          margin-top: 15px; } }
       @media (min-width: 1200px) {
         #header div #nav-container ul li {
           margin-right: 130px; } }
@@ -548,14 +623,33 @@ ul {
 #footer div {
   background-color: #373737;
   padding: 20px 10px 15px 10px; }
+  @media (min-width: 768px) {
+    #footer div {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-areas: "icons-logo text"; } }
+  @media (min-width: 992px) {
+    #footer div {
+      display: flex; } }
   #footer div #icons-logo {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "icons logo";
     grid-gap: 20px; }
+    @media (min-width: 768px) {
+      #footer div #icons-logo {
+        grid-template-areas: "logo icons";
+        align-items: center; } }
     #footer div #icons-logo img {
       grid-area: logo;
       height: 30px; }
+      @media (min-width: 768px) {
+        #footer div #icons-logo img {
+          height: 40px; } }
+      @media (min-width: 992px) {
+        #footer div #icons-logo img {
+          height: 55px;
+          margin-left: 40px; } }
     #footer div #icons-logo #social-icons {
       grid-area: icons;
       display: flex; }
@@ -564,12 +658,25 @@ ul {
       #footer div #icons-logo #social-icons a {
         color: #fff;
         font-size: 1.5625rem; }
+      @media (min-width: 768px) {
+        #footer div #icons-logo #social-icons {
+          padding-top: 45px;
+          width: 160px; } }
+      @media (min-width: 992px) {
+        #footer div #icons-logo #social-icons {
+          padding-left: 20px; } }
   #footer div #footer-text {
     color: #fff;
     line-height: 1.875rem; }
     #footer div #footer-text span {
       font-weight: bold; }
-
+    @media (min-width: 768px) {
+      #footer div #footer-text {
+        display: block; } }
+    @media (min-width: 992px) {
+      #footer div #footer-text {
+        margin-left: auto;
+        margin-right: 80px; } }
 /* =============
     Section 1
 ============= */
@@ -698,7 +805,7 @@ ul {
   @media (min-width: 768px) {
     #section-4 #s4-container #s4-content {
       display: grid;
-      grid-template-columns: 600px 1fr;
+      grid-template-columns: 500px 1fr;
       grid-template-areas: "img text";
       padding: 60px 0px; } }
   @media (min-width: 992px) {
@@ -742,15 +849,51 @@ ul {
   color: #fff;
   padding-top: 30px;
   padding-bottom: 30px; }
+  @media (min-width: 768px) {
+    #section-5 #s5-content {
+      padding-top: 55px;
+      padding-bottom: 55px; } }
+  @media (min-width: 992px) {
+    #section-5 #s5-content {
+      padding-top: 95px;
+      padding-bottom: 100px; } }
   #section-5 #s5-content #title-strip-ham {
     background-color: #FCC424;
     padding: 30px 0px; }
+    @media (min-width: 992px) {
+      #section-5 #s5-content #title-strip-ham {
+        padding: 20px 0px; } }
     #section-5 #s5-content #title-strip-ham h1 {
       text-align: center; }
+      @media (min-width: 768px) {
+        #section-5 #s5-content #title-strip-ham h1 {
+          font-size: 2.375rem; } }
+      @media (min-width: 992px) {
+        #section-5 #s5-content #title-strip-ham h1 {
+          font-size: 3.4375rem; } }
+    @media (min-width: 992px) {
+      #section-5 #s5-content #title-strip-ham {
+        margin-bottom: 60px; } }
+  @media (min-width: 1200px) {
+    #section-5 #s5-content #drivers {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-areas: "verstappen ham bottas"; } }
   #section-5 #s5-content #drivers #Hamilton {
+    grid-area: ham;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "img txt"; }
+    @media (min-width: 768px) {
+      #section-5 #s5-content #drivers #Hamilton {
+        grid-template-columns: 50px 350px auto 50px;
+        grid-template-rows: 1fr 100px;
+        grid-template-areas: ". img table ." ". txt table ."; } }
+    @media (min-width: 992px) {
+      #section-5 #s5-content #drivers #Hamilton {
+        grid-template-columns: auto 360px auto;
+        grid-template-rows: 300px auto auto;
+        grid-template-areas: ". img ." ". txt ." ". table ."; } }
     #section-5 #s5-content #drivers #Hamilton #ham-left {
       grid-area: img;
       background-image: url("../img/section-5/lewis.png");
@@ -761,118 +904,422 @@ ul {
       background-repeat: no-repeat;
       background-color: #D9D9D9;
       margin-top: 30px; }
+      @media (min-width: 768px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-left {
+          margin-top: 55px;
+          height: 300px; } }
+      @media (min-width: 992px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-left {
+          margin-top: 0px; } }
+      @media (min-width: 1200px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-left {
+          background-size: auto; } }
     #section-5 #s5-content #drivers #Hamilton #ham-right {
       grid-area: txt;
       background-color: #fff;
       color: #000;
       text-align: center;
       margin-top: 30px;
-      padding-top: 40px; }
+      padding-top: 30px; }
       #section-5 #s5-content #drivers #Hamilton #ham-right p {
-        font-size: 1.25rem; }
-      #section-5 #s5-content #drivers #Hamilton #ham-right #hm {
-        padding-top: 40px;
+        font-size: 1.25rem;
+        line-height: 30px; }
+        @media (min-width: 768px) {
+          #section-5 #s5-content #drivers #Hamilton #ham-right p {
+            font-size: 1.625rem;
+            margin-top: 20px; } }
+        @media (min-width: 992px) {
+          #section-5 #s5-content #drivers #Hamilton #ham-right p {
+            margin-top: 30px; } }
+        #section-5 #s5-content #drivers #Hamilton #ham-right p #name-break {
+          display: block; }
+          @media (min-width: 768px) {
+            #section-5 #s5-content #drivers #Hamilton #ham-right p #name-break {
+              display: inline; } }
+      #section-5 #s5-content #drivers #Hamilton #ham-right #mercedes {
+        padding-top: 30px;
         padding-bottom: 30px;
         font-size: 1rem; }
+        #section-5 #s5-content #drivers #Hamilton #ham-right #mercedes #UK {
+          display: none; }
+        @media (min-width: 768px) {
+          #section-5 #s5-content #drivers #Hamilton #ham-right #mercedes {
+            padding: 0px;
+            margin: 0px;
+            font-size: 1.125rem; }
+            #section-5 #s5-content #drivers #Hamilton #ham-right #mercedes #UK {
+              display: inline !important; } }
+        @media (min-width: 992px) {
+          #section-5 #s5-content #drivers #Hamilton #ham-right #mercedes {
+            padding-bottom: 35px;
+            padding-top: 10px; } }
+      @media (min-width: 768px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-right {
+          margin: 0px;
+          padding: 0px; } }
+      @media (min-width: 768px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-right img {
+          display: none; } }
     #section-5 #s5-content #drivers #Hamilton #ham-table {
-      display: none; }
+      display: none;
+      padding: 20px;
+      padding: 30px 30px 0px 30px; }
+      #section-5 #s5-content #drivers #Hamilton #ham-table img {
+        padding-bottom: 40px; }
+        @media (min-width: 992px) {
+          #section-5 #s5-content #drivers #Hamilton #ham-table img {
+            display: none; } }
+      #section-5 #s5-content #drivers #Hamilton #ham-table table {
+        width: 300px; }
+        #section-5 #s5-content #drivers #Hamilton #ham-table table td {
+          line-height: 1.625rem; }
+          @media (min-width: 992px) {
+            #section-5 #s5-content #drivers #Hamilton #ham-table table td {
+              line-height: 2.1875rem;
+              font-size: 1.3125rem; } }
+        @media (min-width: 992px) {
+          #section-5 #s5-content #drivers #Hamilton #ham-table table {
+            width: 320px; } }
+        @media (min-width: 1200px) {
+          #section-5 #s5-content #drivers #Hamilton #ham-table table {
+            display: none; } }
+      @media (min-width: 768px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-table {
+          margin-top: 70px;
+          display: block !important;
+          grid-area: table; } }
+      @media (min-width: 992px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-table {
+          margin-top: 0px;
+          padding-bottom: 10px; } }
   #section-5 #s5-content #drivers #Bottas {
     display: none; }
+    @media (min-width: 1200px) {
+      #section-5 #s5-content #drivers #Bottas {
+        grid-area: bottas;
+        display: grid !important;
+        grid-template-rows: 300px 130px;
+        grid-template-areas: ". img ." ". txt ."; } }
+    #section-5 #s5-content #drivers #Bottas #bottas-top {
+      grid-area: img; }
+      #section-5 #s5-content #drivers #Bottas #bottas-top #bottas-bg {
+        background-color: #D9D9D9;
+        width: 360px;
+        height: 130px; }
+        #section-5 #s5-content #drivers #Bottas #bottas-top #bottas-bg #bottas-img {
+          background-image: url("../img/section-5/lewis.png");
+          background-position: center;
+          height: 290px;
+          background-repeat: no-repeat; }
+    #section-5 #s5-content #drivers #Bottas #bottas-bottom {
+      grid-area: txt;
+      background-color: #fff;
+      color: #000;
+      width: 360px; }
   #section-5 #s5-content #drivers #Verstappen {
     display: none; }
+    @media (min-width: 1200px) {
+      #section-5 #s5-content #drivers #Verstappen {
+        display: block !important;
+        grid-area: verstappen; } }
+    #section-5 #s5-content #drivers #Verstappen #vers-bottom {
+      background-color: #fff;
+      color: #000;
+      width: 360px; }
   #section-5 #s5-content .white-button {
     margin-top: 30px; }
-
+    @media (min-width: 768px) {
+      #section-5 #s5-content .white-button {
+        margin-top: 35px; } }
+    @media (min-width: 992px) {
+      #section-5 #s5-content .white-button {
+        display: none; } }
 /* =============
     Section 6
 ============= */
-#section-6 div {
+@media (min-width: 1200px) {
+  #section-6 {
+    display: grid;
+    grid-template-columns: auto 1200px auto;
+    grid-template-areas: ". s6container ."; } }
+
+#section-6 > div {
+  grid-area: s6container;
   padding: 30px 0px; }
-  #section-6 div #section-6-img {
+  @media (min-width: 768px) {
+    #section-6 > div {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas: "text img";
+      padding: 60px 0px; } }
+  #section-6 > div #section-6-img {
     background-image: url("../img/section-6/man-in-car.jpg");
     background-position: center;
     background-size: cover;
     height: 350px; }
-  #section-6 div #section-6-text h1 {
+    @media (min-width: 768px) {
+      #section-6 > div #section-6-img {
+        grid-area: img;
+        height: 510px; } }
+    @media (min-width: 992px) {
+      #section-6 > div #section-6-img {
+        height: 600px; } }
+  @media (min-width: 992px) {
+    #section-6 > div #section-6-text {
+      margin: 10px; } }
+  #section-6 > div #section-6-text h1 {
     text-align: center;
     padding-top: 30px; }
-  #section-6 div #section-6-text #circuit-table {
+    @media (min-width: 768px) {
+      #section-6 > div #section-6-text h1 {
+        padding-top: 60px; } }
+    @media (min-width: 992px) {
+      #section-6 > div #section-6-text h1 {
+        padding-top: 100px; } }
+  #section-6 > div #section-6-text #circuit-table {
     padding: 30px 30px 0px 30px; }
-    #section-6 div #section-6-text #circuit-table td {
+    #section-6 > div #section-6-text #circuit-table td {
       line-height: 1.625rem; }
-  #section-6 div #section-6-text #circuit-bottom-txt {
+      @media (min-width: 768px) {
+        #section-6 > div #section-6-text #circuit-table td {
+          line-height: 2.1875rem;
+          font-size: 1.3125rem; } }
+    @media (min-width: 768px) {
+      #section-6 > div #section-6-text #circuit-table {
+        display: block;
+        padding: 30px 25px 0px 10px; } }
+    @media (min-width: 992px) {
+      #section-6 > div #section-6-text #circuit-table {
+        padding: 45px 80px 0px 80px; } }
+  #section-6 > div #section-6-text #circuit-bottom-txt {
     padding: 45px 30px 0px 30px; }
-    #section-6 div #section-6-text #circuit-bottom-txt p {
+    #section-6 > div #section-6-text #circuit-bottom-txt p {
       padding-bottom: 10px; }
-
+      @media (min-width: 768px) {
+        #section-6 > div #section-6-text #circuit-bottom-txt p {
+          font-size: 1.3125rem;
+          line-height: 1.4375rem; } }
+      @media (min-width: 992px) {
+        #section-6 > div #section-6-text #circuit-bottom-txt p {
+          line-height: 1.6875rem; } }
+      @media (min-width: 768px) {
+        #section-6 > div #section-6-text #circuit-bottom-txt p .no-break {
+          display: none; } }
+    @media (min-width: 768px) {
+      #section-6 > div #section-6-text #circuit-bottom-txt {
+        display: block;
+        padding: 45px 25px 0px 10px; } }
+    @media (min-width: 992px) {
+      #section-6 > div #section-6-text #circuit-bottom-txt {
+        padding: 45px 80px 0px 80px; } }
+  @media (min-width: 768px) {
+    #section-6 > div #section-6-text {
+      grid-area: text; } }
 /* =============
     Section 7
 ============= */
-#section-7 div #bg-7 {
-  background-image: url("../img/section-7/racing-car.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 200px; }
-
-#section-7 div #title-strip-tix {
-  background-color: #E92626;
-  padding: 30px 0px 30px 0px; }
-  #section-7 div #title-strip-tix h1 {
-    text-align: center;
-    color: #fff; }
-
-#section-7 div #table-and-button {
-  background-color: #373737;
-  padding-bottom: 40px; }
-  #section-7 div #table-and-button #tickets-table {
-    color: #fff; }
-    #section-7 div #table-and-button #tickets-table #tix, #section-7 div #table-and-button #tickets-table #money {
-      font-size: 1.5625rem; }
-    #section-7 div #table-and-button #tickets-table #money {
-      text-align: center; }
-    #section-7 div #table-and-button #tickets-table table {
-      border-spacing: 20px 30px;
-      border-collapse: separate;
-      line-height: 1.25rem; }
-
+#section-7 {
+  margin-bottom: 530px; }
+  @media (min-width: 768px) {
+    #section-7 {
+      margin-bottom: 500px; } }
+  @media (min-width: 992px) {
+    #section-7 {
+      margin-bottom: 550px;
+      margin-top: 30px; } }
+  #section-7 div #bg-7 {
+    background-image: url("../img/section-7/racing-car.jpg");
+    background-position: center;
+    background-position-y: -50px;
+    background-size: cover;
+    height: 200px; }
+    @media (min-width: 768px) {
+      #section-7 div #bg-7 {
+        height: 375px;
+        background-position-y: -200px; } }
+    @media (min-width: 992px) {
+      #section-7 div #bg-7 {
+        height: 500px;
+        background-position-y: -320px; } }
+    #section-7 div #bg-7 #title-strip-tix {
+      padding-top: 55px;
+      padding-bottom: 55px; }
+      #section-7 div #bg-7 #title-strip-tix h1 {
+        text-align: center;
+        color: #fff;
+        background-color: #E92626;
+        padding: 20px 0px 20px 0px; }
+        @media (min-width: 992px) {
+          #section-7 div #bg-7 #title-strip-tix h1 {
+            font-size: 3.4375rem; } }
+      @media (min-width: 992px) {
+        #section-7 div #bg-7 #title-strip-tix {
+          padding-top: 95px;
+          padding-bottom: 95px; } }
+  @media (min-width: 992px) {
+    #section-7 div #table-grid {
+      display: grid;
+      grid-template-columns: auto 700px auto;
+      grid-template-areas: ". section-7-table ."; } }
+  #section-7 div #table-grid #table-and-button {
+    grid-area: section-7-table;
+    background-color: #373737;
+    padding-bottom: 40px; }
+    @media (min-width: 768px) {
+      #section-7 div #table-grid #table-and-button {
+        margin: 0px 80px;
+        padding: 50px; } }
+    @media (min-width: 992px) {
+      #section-7 div #table-grid #table-and-button {
+        margin: 0px;
+        padding: 50px; } }
+    #section-7 div #table-grid #table-and-button #tickets-table {
+      color: #fff; }
+      #section-7 div #table-grid #table-and-button #tickets-table td {
+        font-size: 1rem; }
+        @media (min-width: 768px) {
+          #section-7 div #table-grid #table-and-button #tickets-table td {
+            font-size: 1.125rem; } }
+      #section-7 div #table-grid #table-and-button #tickets-table .hide-buttons {
+        display: none; }
+        @media (min-width: 768px) {
+          #section-7 div #table-grid #table-and-button #tickets-table .hide-buttons {
+            display: block; } }
+      #section-7 div #table-grid #table-and-button #tickets-table #tix, #section-7 div #table-grid #table-and-button #tickets-table #money {
+        font-size: 1.5625rem; }
+        @media (min-width: 768px) {
+          #section-7 div #table-grid #table-and-button #tickets-table #tix, #section-7 div #table-grid #table-and-button #tickets-table #money {
+            font-size: 1.6875rem; } }
+        #section-7 div #table-grid #table-and-button #tickets-table #tix #price, #section-7 div #table-grid #table-and-button #tickets-table #money #price {
+          display: none; }
+          @media (min-width: 768px) {
+            #section-7 div #table-grid #table-and-button #tickets-table #tix #price, #section-7 div #table-grid #table-and-button #tickets-table #money #price {
+              display: inline; } }
+      #section-7 div #table-grid #table-and-button #tickets-table #money {
+        text-align: center; }
+      #section-7 div #table-grid #table-and-button #tickets-table table {
+        border-spacing: 20px 30px;
+        border-collapse: separate;
+        line-height: 1.25rem; }
+        @media (min-width: 768px) {
+          #section-7 div #table-grid #table-and-button #tickets-table table {
+            border-spacing: 20px 40px; } }
+        #section-7 div #table-grid #table-and-button #tickets-table table .sold-out-button {
+          display: none; }
+          @media (min-width: 768px) {
+            #section-7 div #table-grid #table-and-button #tickets-table table .sold-out-button {
+              display: block !important; } }
+        #section-7 div #table-grid #table-and-button #tickets-table table .red-button {
+          display: none; }
+          @media (min-width: 768px) {
+            #section-7 div #table-grid #table-and-button #tickets-table table .red-button {
+              display: block !important; } }
+    #section-7 div #table-grid #table-and-button #red-button-7 {
+      padding-top: 10px; }
+      @media (min-width: 768px) {
+        #section-7 div #table-grid #table-and-button #red-button-7 {
+          display: none !important; } }
 /* =============
     Section 8
 ============= */
 #section-8 #section-8-content {
   background-color: #71D7FF;
-  padding: 30px 10px; }
+  padding: 30px 10px;
+  margin-top: 30px; }
+  @media (min-width: 768px) {
+    #section-8 #section-8-content {
+      padding: 0px; } }
   #section-8 #section-8-content #section-8-grid {
     display: grid;
     grid-template-columns: 20% 80%;
     grid-template-rows: auto auto;
     grid-template-areas: "vip ." ". text"; }
+    @media (min-width: 768px) {
+      #section-8 #section-8-content #section-8-grid {
+        grid-template-rows: 1fr;
+        grid-template-columns: 30% 70%;
+        grid-template-rows: 215px;
+        grid-template-areas: "vip text"; } }
     #section-8 #section-8-content #section-8-grid #vip-title {
-      grid-area: vip; }
+      grid-area: vip;
+      padding-bottom: 10px; }
+      @media (min-width: 768px) {
+        #section-8 #section-8-content #section-8-grid #vip-title {
+          text-align: center;
+          padding-top: 90px;
+          border-right: 20px solid #fff; } }
     #section-8 #section-8-content #section-8-grid #vip-body-text {
       grid-area: text;
-      max-width: 250px;
       padding-bottom: 30px; }
       #section-8 #section-8-content #section-8-grid #vip-body-text p {
         line-height: 20px; }
+        @media (min-width: 768px) {
+          #section-8 #section-8-content #section-8-grid #vip-body-text p {
+            font-size: 1.125rem;
+            line-height: 1.5rem;
+            padding: 30px; } }
+      @media (min-width: 768px) {
+        #section-8 #section-8-content #section-8-grid #vip-body-text {
+          text-align: justify;
+          padding: 20px 30px 20px 30px; } }
   #section-8 #section-8-content .white-button {
     padding-bottom: 10px; }
-
+    @media (min-width: 768px) {
+      #section-8 #section-8-content .white-button {
+        padding-bottom: 30px;
+        display: flex; } }
 /* =============
     Section 9
 ============= */
 #section-9 {
   padding: 30px 0px; }
+  @media (min-width: 768px) {
+    #section-9 {
+      padding: 60px 0px; } }
+  @media (min-width: 992px) {
+    #section-9 {
+      padding: 100px 0px; } }
   #section-9 ul {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 500px 230px 200px;
     grid-template-areas: "g1 g1" "g2 g3" "g4 g4"; }
+    @media (min-width: 768px) {
+      #section-9 ul {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 465px 230px;
+        grid-template-areas: "g1 g1 g1" "g4 g2 g3"; } }
+    @media (min-width: 992px) {
+      #section-9 ul {
+        grid-template-columns: 4fr 2fr 3fr;
+        grid-template-rows: 300px 250px 300px;
+        grid-template-areas: "g1 g1 g3"  "g1 g1 g2"  "g4 g5 g2"; } }
+    @media (min-width: 1200px) {
+      #section-9 ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 300px 250px 300px;
+        grid-template-areas: "g6 g1 g1 g3"  "g6 g1 g1 g2"  "g4 g4 g5 g2"; } }
     #section-9 ul #gallery-1 {
       grid-area: g1;
       background-image: url("../img/Section-9/gallery-1.jpg");
       background-position: center;
       background-size: cover; }
+      #section-9 ul #gallery-1 p {
+        font-size: 1.875rem;
+        line-height: 2.5rem;
+        text-align: center;
+        padding: 30px 10px; }
+        @media (min-width: 768px) {
+          #section-9 ul #gallery-1 p {
+            font-size: 2.5rem;
+            line-height: 3.125rem;
+            padding: 40px 150px; } }
+        @media (min-width: 992px) {
+          #section-9 ul #gallery-1 p {
+            font-size: 2.8125rem;
+            line-height: 3.4375rem;
+            padding: 40px 100px; } }
     #section-9 ul #gallery-2 {
       grid-area: g2;
       background-image: url("../img/Section-9/gallery-2.jpg");
@@ -889,16 +1336,20 @@ ul {
       background-position: center;
       background-size: cover; }
     #section-9 ul #gallery-5 {
+      grid-area: g5;
       background-image: url("../img/Section-9/gallery-5.jpg");
       background-position: center;
       background-size: cover;
       display: none; }
+      @media (min-width: 992px) {
+        #section-9 ul #gallery-5 {
+          display: block !important; } }
     #section-9 ul #gallery-6 {
+      grid-area: g6;
       background-image: url("../img/Section-9/gallery-6.jpg");
       background-position: center;
       background-size: cover;
       display: none; }
-  #section-9 p {
-    font-size: 1.875rem;
-    line-height: 2.5rem;
-    text-align: center; }
+      @media (min-width: 1200px) {
+        #section-9 ul #gallery-6 {
+          display: block !important; } }

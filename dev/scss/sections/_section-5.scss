@@ -3,29 +3,88 @@
 ============= */
 #section-5{
 
+    // @include xl{
+    //     grid-template-columns: auto 1200px auto;
+    //     grid-template-rows: auto;
+    //     grid-template-areas: ". section-5 .";
+    // }
+
     #s5-content{
+        // grid-area: section-5 ;
+
         background-color: $gray;
         color: $white;
         padding-top: 30px;
         padding-bottom: 30px;
 
+        @include md{
+            padding-top: 55px;
+            padding-bottom: 55px;
+        }
+
+        @include lg{
+            padding-top: 95px;
+            padding-bottom: 100px;
+        }
+
         #title-strip-ham{
             background-color: $yellow;
             padding: 30px 0px;
 
+            @include lg{
+                padding: 20px 0px;
+            }
+
             h1{
                 text-align: center;
+
+                @include md{
+                    font-size: rem-calc(38);
+                }
+
+                @include lg{
+                    font-size: rem-calc(55);
+                    
+                }
+            }
+
+            @include lg{
+                margin-bottom: 60px;
             }
 
         }
 
+        
+
         #drivers{
+
+            @include xl{
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-areas: "verstappen ham bottas";
+            }
             
             #Hamilton{
+                grid-area: ham;
 
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-areas: "img txt";
+
+                @include md{
+                    grid-template-columns: 50px 350px auto 50px;
+                    grid-template-rows: 1fr 100px;
+                    grid-template-areas: ". img table ."
+                                        ". txt table .";
+                }
+
+               @include lg{
+                    grid-template-columns: auto 360px auto;
+                    grid-template-rows: 300px auto auto;
+                    grid-template-areas: ". img ."
+                                    ". txt ."
+                                    ". table .";
+               }
 
                 #ham-left{
                     grid-area: img;
@@ -39,6 +98,21 @@
 
                     background-color: $light-gray;
                     margin-top: 30px;
+                    // background-size: 50% auto;
+
+                    @include md{
+                        margin-top: 55px;
+                        height: 300px;
+                    }
+                    
+                    @include lg{
+                        margin-top: 0px;
+                        // position: relative;
+                    }
+
+                    @include xl{
+                        background-size: auto;
+                    }
                 }
 
                 #ham-right{
@@ -49,25 +123,136 @@
                     text-align: center;
 
                     margin-top: 30px;
+                    padding-top: 30px;
 
-                    padding-top: 40px;
+                    
 
                     p{
                         font-size: rem-calc(20);
+                        line-height: 30px;
+
+                        @include md{
+                            font-size: rem-calc(26);
+                            margin-top: 20px;
+                        }
+
+                        @include lg{
+                            margin-top: 30px;
+                        }
+
+                       
+                        #name-break{
+                            display: block;
+
+                            @include md{
+                                display: inline;
+                            }
+                        }   
+                        
                     }
 
-                    #hm{
-                        padding-top: 40px;
+                    #mercedes{
+                        padding-top: 30px;
                         padding-bottom: 30px;
 
                         font-size: rem-calc(16);
+
+                        #UK{
+                            display: none;
+                        }
+
+                        @include md{
+                            padding:0px;
+                            margin: 0px;
+                            font-size: rem-calc(18);
+
+                            #UK{
+                                display: inline !important;
+                            }
+                        }
+
+                        @include lg{
+                            padding-bottom: 35px;
+                            padding-top: 10px;
+                        }
+                        
                     }
+
+                    @include md{
+                        margin: 0px;
+                        padding: 0px;
+                    }
+
+                    img{
+                        @include md{
+                            display: none;
+                        }
+
+                        // @include lg{
+                        //     display: block;
+                        //     position: absolute;
+                        //     margin: -300px -30px;
+                        // }
+                    }
+                    
 
                 }
 
                 #ham-table{
                     display: none;
+                    padding: 20px;
+
+
+                    img{
+                        padding-bottom: 40px;
+
+                        @include lg{
+                            display: none;
+                        }
+                        
+                    }
+
+                    padding: 30px 30px 0px 30px;
+                    
+                    table{
+                        td{
+                            line-height: rem-calc(26);
+
+                            @include lg{
+                                line-height: rem-calc(35);
+                                font-size: rem-calc(21);
+                            }
+                        }
+
+                        width: 300px;
+
+                        @include lg{
+                            width: 320px;
+                        }
+
+                        @include xl{
+                            display: none;
+                        }
+
+                    }
+                    
+
+                    @include md{
+                        margin-top: 70px;
+                        display: block !important;
+                        grid-area: table;
+                    }
+
+                    @include lg{
+                        margin-top: 0px;
+                        padding-bottom: 10px;
+                        
+                    }
+
+                    
                 }
+
+                
 
 
             }
@@ -75,10 +260,72 @@
             #Bottas{
                 display: none;
 
+                @include xl{
+                    grid-area: bottas;
+
+                    display: grid !important;
+                    grid-template-rows: 300px 130px ;
+                    grid-template-areas:
+                        ". img ."
+                        ". txt .";
+                }
+
+                #bottas-top{
+                    grid-area: img;
+
+                    #bottas-bg{
+                        background-color: $light-gray;
+                        width: 360px;
+                        height: 130px;
+
+                        #finland-flag{
+
+                        }
+
+                        #bottas-img{
+                            background-image: url('../img/section-5/lewis.png');
+                            background-position: center;
+                            height: 290px;
+                            background-repeat: no-repeat;
+                            
+                        }
+
+                    }
+
+                }
+                
+                #bottas-bottom{
+                    grid-area: txt;
+
+                    background-color: $white;
+                    color: $black;
+                    width: 360px;
+                }
+
             }
 
             #Verstappen{
                 display: none;
+
+                @include xl{
+                    display: block !important;
+                    grid-area: verstappen;
+                }
+
+                #vers-top{
+                    
+
+                }
+
+                #vers-bottom{
+                    background-color: $white;
+                    color: $black;
+                    width: 360px;
+                    
+
+                    // font-size: rem-calc(26);
+                    
+                }
 
 
             }
@@ -87,7 +334,15 @@
 
         .white-button{
             margin-top: 30px;
-  
+
+            @include md{
+                margin-top: 35px;
+            }
+
+            @include lg{
+                display: none;
+            }
+
         }
 
 

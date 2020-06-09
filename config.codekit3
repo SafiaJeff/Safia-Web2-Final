@@ -123,6 +123,28 @@
 		"oT": 1,
 		"q": 100
 		},
+	"/deploy/img/Section-5/netherlands.png": {
+		"ft": 32768,
+		"iS": 1099,
+		"oA": 0,
+		"oAP": "/deploy/img/Section-5/netherlands.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Section-5/verstappen copy.png": {
+		"ft": 32768,
+		"iS": 83674,
+		"oA": 0,
+		"oAP": "/deploy/img/Section-5/verstappen copy.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/Section-6/man-in-car.jpg": {
 		"ft": 16384,
 		"iS": 493135,

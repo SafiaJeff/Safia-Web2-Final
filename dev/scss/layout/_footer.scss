@@ -3,21 +3,49 @@
 ============= */
     
 #footer{
-    div{
-        background-color: $gray;
 
+
+    div{
+
+        background-color: $gray;
         padding: 20px 10px 15px 10px;
+
+        @include md{
+            display: grid;
+            grid-template-columns: auto auto;
+            grid-template-areas: "icons-logo text";
+        }
+
+        @include lg{
+            display: flex;
+            
+        }
         
 
         #icons-logo{
+
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-areas: "icons logo";
             grid-gap: 20px;
 
+            @include md{
+                grid-template-areas: "logo icons";
+                align-items: center;
+            }
+
             img{
                 grid-area: logo;
                 height: 30px;
+
+                @include md{
+                    height: 40px;
+                }
+
+                @include lg{
+                    height: 55px;
+                    margin-left: 40px;
+                }
 
             }
 
@@ -28,6 +56,7 @@
 
                 li{
                     flex: 1;
+
                 }
 
                 a{
@@ -35,11 +64,18 @@
                     font-size: rem-calc(25);
                 }
 
+                @include md{
+                    padding-top: 45px;
+                    width: 160px;
+                }
+
+                @include lg{
+                    padding-left: 20px;
+                    
+                }
+               
 
             }
-
-
-
 
         }
 
@@ -51,8 +87,18 @@
             color: $white;
             line-height: rem-calc(30);
 
+            @include md{
+                display: block;
+            }
+
+            @include lg{
+                margin-left: auto;
+                margin-right: 80px;
+            }
+
         }
 
+    
 
 
 

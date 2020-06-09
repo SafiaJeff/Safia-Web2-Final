@@ -2,20 +2,60 @@
     Section 6
 ============= */
 #section-6{
-    div{
+    @include xl{
+        display: grid;
+         grid-template-columns: auto 1200px auto; 
+         grid-template-areas: ". s6container .";
+    }
+    
+
+    >div{
+        
+        grid-area: s6container;
         padding: 30px 0px;
+
+        @include md{
+            display: grid;
+            grid-template-columns: 50% 50%; 
+            grid-template-areas: "text img";
+
+            padding: 60px 0px;
+        }
 
         #section-6-img{
             background-image: url('../img/section-6/man-in-car.jpg');
             background-position: center;
             background-size: cover;
             height: 350px;
+
+            @include md{
+                grid-area: img;
+
+                height: 510px;
+            }
+
+            @include lg{
+                height: 600px;
+            }
         }
 
         #section-6-text{
+
+            @include lg{
+                margin: 10px;
+            }
+
             h1{
                 text-align: center;
                 padding-top: 30px;
+
+                @include md{
+                    padding-top: 60px;
+                }
+
+                @include lg{
+                    padding-top: 100px;
+                }
             }
 
             #circuit-table{
@@ -23,9 +63,24 @@
 
                 td{
                     line-height: rem-calc(26);
+
+                    @include md{
+                        line-height: rem-calc(35);
+                        font-size: rem-calc(21);
+                    }
                 }
 
+                @include md{ 
+                    display: block;
+                    padding: 30px 25px 0px 10px;
 
+                }
+
+                @include lg{
+                    padding: 45px 80px 0px 80px;
+
+                    
+                }
 
             }
             
@@ -34,15 +89,44 @@
 
                 p{
                     padding-bottom: 10px;
+
+                    @include md{
+                        font-size: rem-calc(21);
+                        line-height: rem-calc(23);
+                    }
+
+                    @include lg{
+                        line-height: rem-calc(27);
+                    }
+
+                    .no-break{
+                        @include md{
+                            display: none;
+                        }
+
+                        
+                        
+                    }
+                }
+
+                @include md{
+                    display: block;
+                    padding: 45px 25px 0px 10px;
+
+                    
+                }
+
+                @include lg{
+                    padding: 45px 80px 0px 80px;
                 }
 
                 
                 
             }
 
-
-
-
+            @include md{
+                grid-area: text;
+            }
 
         }
 
