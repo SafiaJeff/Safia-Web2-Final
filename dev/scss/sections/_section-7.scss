@@ -5,11 +5,11 @@
     margin-bottom: 530px;
 
     @include md{
-        margin-bottom: 500px;
+        margin-bottom: 480px;
     }
 
     @include lg{
-        margin-bottom: 550px;
+        margin-bottom: 500px;
         margin-top: 30px;
     }
 
@@ -29,7 +29,11 @@
 
             @include lg{
                 height: 500px;
-                background-position-y: -320px;
+                background-position-y: -280px;
+            }
+
+            @include lg{
+                background-position-y: -500px;
             }
 
             #title-strip-tix{
@@ -39,7 +43,12 @@
                     background-color: $red;
                     padding: 20px 0px 20px 0px;
 
+                    @include md{
+                        padding: 25px 0px;
+                    }
+
                     @include lg{
+                        padding: 20px 0px;
                         font-size: rem-calc(55);
                     }
 
@@ -75,12 +84,12 @@
 
             @include md{
                 margin: 0px 80px;
-                padding: 50px;
+                padding: 40px;
             }
 
             @include lg{
                 margin: 0px;
-                padding: 50px;
+                padding: 40px 50px;
             }
 
             

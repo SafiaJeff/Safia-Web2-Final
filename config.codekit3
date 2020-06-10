@@ -27,28 +27,6 @@
 		"oF": 0,
 		"oS": 3
 		},
-	"/deploy/img/flags/finland.png": {
-		"ft": 32768,
-		"iS": 1302,
-		"oA": 0,
-		"oAP": "/deploy/img/flags/finland.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/flags/netherlands.png": {
-		"ft": 32768,
-		"iS": 1099,
-		"oA": 0,
-		"oAP": "/deploy/img/flags/netherlands.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"/deploy/img/flags/UK-Flag.png": {
 		"ft": 32768,
 		"iS": 3387,
@@ -112,6 +90,28 @@
 		"opt": 0,
 		"q": 100
 		},
+	"/deploy/img/Section-5/bottas-xl.png": {
+		"ft": 32768,
+		"iS": 91361,
+		"oA": 0,
+		"oAP": "/deploy/img/Section-5/bottas-xl.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
+	"/deploy/img/Section-5/lewis-desktop.png": {
+		"ft": 32768,
+		"iS": 90760,
+		"oA": 0,
+		"oAP": "/deploy/img/Section-5/lewis-desktop.png",
+		"oF": 0,
+		"oIPL": 1,
+		"opt": 1,
+		"oT": 1,
+		"q": 100
+		},
 	"/deploy/img/Section-5/lewis.png": {
 		"ft": 32768,
 		"iS": 86531,
@@ -123,25 +123,14 @@
 		"oT": 1,
 		"q": 100
 		},
-	"/deploy/img/Section-5/netherlands.png": {
+	"/deploy/img/Section-5/verstappen-xl.png": {
 		"ft": 32768,
-		"iS": 1099,
+		"iS": 84517,
 		"oA": 0,
-		"oAP": "/deploy/img/Section-5/netherlands.png",
+		"oAP": "/deploy/img/Section-5/verstappen-xl.png",
 		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"/deploy/img/Section-5/verstappen copy.png": {
-		"ft": 32768,
-		"iS": 83674,
-		"oA": 0,
-		"oAP": "/deploy/img/Section-5/verstappen copy.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
+		"oIPL": 1,
+		"opt": 1,
 		"oT": 1,
 		"q": 100
 		},

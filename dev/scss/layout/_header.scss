@@ -54,7 +54,7 @@
             }
 
             @include md{
-                display: none !important; //turns off burger in large
+                display: none !important; 
             }
 
         }
@@ -62,7 +62,7 @@
         #nav-container{
             grid-area: nav;
 
-            padding: 30px;
+            padding: 15px 30px;
             background-color: $white;
             text-align: end;
             display: none;
@@ -76,8 +76,9 @@
             @include md{
                 display: block !important;
                 border-bottom: none;
-
+                font-size: rem-calc(18);
                 background-color: $red;
+                padding: 30px;
 
                 #hide-home{
                     display: block !important;
@@ -104,11 +105,8 @@
             }
 
             @include xl{
-                ul{
-                    li{
-                        margin-right: 130px;
-                    }
-                }
+                margin-left: 300px;
+                
 
             }
 
@@ -119,47 +117,7 @@
 
 
 
-
-        // display: flex;
-        
-
-        // #logo-container{
-        //     flex:1;
-
-        //     img{
-        //         height: 30px;
-        //     }
-            
-        // }
-
-        // #burger-container{
-        //     flex:1;
-        //     padding-left: 150px;
-
-        //     font-size: rem-calc(30);
-        //     color: $white;
-
-        //     i{
-        //         cursor: pointer; //changes cursor to hand
-        //         font-size: rem-calc(30);
-        //     }
-        // }
-
-
-        // #nav-container{
-        //     display: none;
-        // }
-
-        
-
-
-
-
     }
-
-
-
-
 
 
 

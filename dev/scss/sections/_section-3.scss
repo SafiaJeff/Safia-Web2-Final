@@ -22,6 +22,7 @@
             line-height: rem-calc(32);
             font-size: rem-calc(20);
             text-align: justify;
+            font-family: 'armata', sans-serif;
 
             padding: 30px 10px;
 
@@ -31,9 +32,9 @@
             }
 
             @include md{
-                padding: 60px 30px;
+                padding: 60px 60px;
 
-                line-height: rem-calc(40);
+                line-height: rem-calc(44);
                 font-size: rem-calc(21);
 
                 span{
@@ -46,6 +47,10 @@
 
                 line-height: rem-calc(50);
                 font-size: rem-calc(25);
+            }
+
+            @include xl{
+                padding: 100px 200px;
             }
 
         }

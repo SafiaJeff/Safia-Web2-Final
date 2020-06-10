@@ -3,14 +3,7 @@
 ============= */
 #section-5{
 
-    // @include xl{
-    //     grid-template-columns: auto 1200px auto;
-    //     grid-template-rows: auto;
-    //     grid-template-areas: ". section-5 .";
-    // }
-
     #s5-content{
-        // grid-area: section-5 ;
 
         background-color: $gray;
         color: $white;
@@ -29,10 +22,15 @@
 
         #title-strip-ham{
             background-color: $yellow;
-            padding: 30px 0px;
+            padding: 20px 0px;
+
+            @include md{
+                padding:25px 0px;
+            }
 
             @include lg{
                 padding: 20px 0px;
+                margin-bottom: 60px;
             }
 
             h1{
@@ -48,10 +46,6 @@
                 }
             }
 
-            @include lg{
-                margin-bottom: 60px;
-            }
-
         }
 
         
@@ -60,8 +54,9 @@
 
             @include xl{
                 display: grid;
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-areas: "verstappen ham bottas";
+                grid-template-columns: auto 450px 450px 450px auto;
+                grid-template-areas: ". verstappen ham bottas .";
+                grid-gap: 20px;
             }
             
             #Hamilton{
@@ -73,17 +68,24 @@
 
                 @include md{
                     grid-template-columns: 50px 350px auto 50px;
-                    grid-template-rows: 1fr 100px;
+                    grid-template-rows: 1fr 110px;
                     grid-template-areas: ". img table ."
                                         ". txt table .";
                 }
 
                @include lg{
-                    grid-template-columns: auto 360px auto;
-                    grid-template-rows: 300px auto auto;
-                    grid-template-areas: ". img ."
-                                    ". txt ."
-                                    ". table .";
+                //    padding-top: 100px;
+
+                    grid-template-columns: auto 500px auto;
+                    grid-template-rows:  auto auto;
+                    grid-template-areas: 
+                                    ". ham-top ."
+                                    ". table-bottom .";
+               }
+
+               @include xl{
+                   
+                   padding-top: 13px;
                }
 
                 #ham-left{
@@ -98,7 +100,7 @@
 
                     background-color: $light-gray;
                     margin-top: 30px;
-                    // background-size: 50% auto;
+                    
 
                     @include md{
                         margin-top: 55px;
@@ -106,12 +108,21 @@
                     }
                     
                     @include lg{
-                        margin-top: 0px;
-                        // position: relative;
+                        display: none;
+                        margin-bottom: -10px;
                     }
 
-                    @include xl{
-                        background-size: auto;
+                    
+                }
+
+                #ham-top-desktop{
+                    display: none;
+
+                    @include lg{
+                        display: block !important;
+
+                        grid-area: ham-top;
+
                     }
                 }
 
@@ -125,15 +136,24 @@
                     margin-top: 30px;
                     padding-top: 30px;
 
+                    @include lg{
+                        display: none;
+                    }
+
                     
 
                     p{
                         font-size: rem-calc(20);
                         line-height: 30px;
+                        line-height: rem-calc(22);
+                        padding-top: 5px;
+                        
 
                         @include md{
                             font-size: rem-calc(26);
                             margin-top: 20px;
+                            padding-bottom: 10px;
+                            
                         }
 
                         @include lg{
@@ -188,11 +208,7 @@
                             display: none;
                         }
 
-                        // @include lg{
-                        //     display: block;
-                        //     position: absolute;
-                        //     margin: -300px -30px;
-                        // }
+                      
                     }
                     
 
@@ -202,26 +218,42 @@
                     display: none;
                     padding: 20px;
 
+                    @include md{
+                        padding: 30px 30px 0px 30px;
+                        font-size: rem-calc(21);
+                    }
+
+                    @include lg{
+                        padding: 30px 0px 0px 75px;
+                    }
 
                     img{
                         padding-bottom: 40px;
+                        
+                        @include md{
+                            padding-bottom: 30px;
+                        }
 
                         @include lg{
                             display: none;
                         }
                         
                     }
-
-                    padding: 30px 30px 0px 30px;
                     
                     table{
                         td{
-                            line-height: rem-calc(26);
+                            line-height: rem-calc(30);
+
+                            @include md{
+                                padding-left: 5px;
+                            }
 
                             @include lg{
                                 line-height: rem-calc(35);
                                 font-size: rem-calc(21);
                             }
+
+
                         }
 
                         width: 300px;
@@ -246,13 +278,12 @@
                     @include lg{
                         margin-top: 0px;
                         padding-bottom: 10px;
+                        grid-area: table-bottom;
                         
                     }
 
-                    
+        
                 }
-
-                
 
 
             }
@@ -261,45 +292,9 @@
                 display: none;
 
                 @include xl{
+                    display: block !important;
                     grid-area: bottas;
-
-                    display: grid !important;
-                    grid-template-rows: 300px 130px ;
-                    grid-template-areas:
-                        ". img ."
-                        ". txt .";
-                }
-
-                #bottas-top{
-                    grid-area: img;
-
-                    #bottas-bg{
-                        background-color: $light-gray;
-                        width: 360px;
-                        height: 130px;
-
-                        #finland-flag{
-
-                        }
-
-                        #bottas-img{
-                            background-image: url('../img/section-5/lewis.png');
-                            background-position: center;
-                            height: 290px;
-                            background-repeat: no-repeat;
-                            
-                        }
-
-                    }
-
-                }
-                
-                #bottas-bottom{
-                    grid-area: txt;
-
-                    background-color: $white;
-                    color: $black;
-                    width: 360px;
+                    
                 }
 
             }
@@ -312,35 +307,29 @@
                     grid-area: verstappen;
                 }
 
-                #vers-top{
-                    
-
-                }
-
-                #vers-bottom{
-                    background-color: $white;
-                    color: $black;
-                    width: 360px;
-                    
-
-                    // font-size: rem-calc(26);
-                    
-                }
-
 
             }
 
         }
 
         .white-button{
-            margin-top: 30px;
+            text-align: center;
+            
+            margin-top: 40px;
+            margin-bottom: 10px;
 
             @include md{
-                margin-top: 35px;
+                margin-top: 40px;
             }
 
             @include lg{
+                margin-top: 25px;
+            }
+
+            @include xl{
                 display: none;
+
+                
             }
 
         }

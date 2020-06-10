@@ -382,6 +382,12 @@ p {
 .section-title {
   font-weight: 300; }
 
+#header {
+  font-family: default-gothic, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 1.4375rem; }
+
 .white-button {
   text-align: center; }
   .white-button a {
@@ -426,7 +432,7 @@ p {
 
 .sold-out-button {
   text-align: center;
-  border: solid 0.5px #fff;
+  border: solid 0.25px #fff;
   border-radius: 2px;
   padding: 8px 2px; }
   .sold-out-button a {
@@ -475,6 +481,17 @@ p {
   text-align: center;
   padding-top: 15px;
   padding-bottom: 35px; }
+
+#section-5 .bold-text-5 {
+  font-family: default-gothic, sans-serif;
+  font-weight: 600;
+  font-style: normal; }
+
+#section-5 .text-right-5 {
+  font-family: default-gothic, sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  text-align: right; }
 
 #section-6 {
   font-family: default-gothic, sans-serif;
@@ -590,7 +607,7 @@ ul {
           display: none !important; } }
     #header div #nav-container {
       grid-area: nav;
-      padding: 30px;
+      padding: 15px 30px;
       background-color: #fff;
       text-align: end;
       display: none;
@@ -601,7 +618,9 @@ ul {
         #header div #nav-container {
           display: block !important;
           border-bottom: none;
-          background-color: #E92626; }
+          font-size: 1.125rem;
+          background-color: #E92626;
+          padding: 30px; }
           #header div #nav-container #hide-home {
             display: block !important; }
           #header div #nav-container ul {
@@ -615,19 +634,20 @@ ul {
         #header div #nav-container ul {
           margin-top: 15px; } }
       @media (min-width: 1200px) {
-        #header div #nav-container ul li {
-          margin-right: 130px; } }
+        #header div #nav-container {
+          margin-left: 300px; } }
 /* =============
     Footer
 ============= */
 #footer div {
   background-color: #373737;
-  padding: 20px 10px 15px 10px; }
+  padding: 15px 10px 15px 10px; }
   @media (min-width: 768px) {
     #footer div {
       display: grid;
       grid-template-columns: auto auto;
-      grid-template-areas: "icons-logo text"; } }
+      grid-template-areas: "icons-logo text";
+      padding: 15px 10px 15px 20px; } }
   @media (min-width: 992px) {
     #footer div {
       display: flex; } }
@@ -642,19 +662,23 @@ ul {
         align-items: center; } }
     #footer div #icons-logo img {
       grid-area: logo;
-      height: 30px; }
+      height: 30px;
+      width: 120px; }
       @media (min-width: 768px) {
         #footer div #icons-logo img {
-          height: 40px; } }
+          height: 40px;
+          width: 160px; } }
       @media (min-width: 992px) {
         #footer div #icons-logo img {
           height: 55px;
+          width: 200px;
           margin-left: 40px; } }
     #footer div #icons-logo #social-icons {
       grid-area: icons;
       display: flex; }
       #footer div #icons-logo #social-icons li {
-        flex: 1; }
+        flex: 1;
+        padding: 0px 5px; }
       #footer div #icons-logo #social-icons a {
         color: #fff;
         font-size: 1.5625rem; }
@@ -664,19 +688,20 @@ ul {
           width: 160px; } }
       @media (min-width: 992px) {
         #footer div #icons-logo #social-icons {
-          padding-left: 20px; } }
-  #footer div #footer-text {
+          padding-left: 20px;
+          padding-top: 65px; } }
+  #footer div #footer-text span {
+    font-weight: bold; }
+  #footer div #footer-text p {
     color: #fff;
     line-height: 1.875rem; }
-    #footer div #footer-text span {
-      font-weight: bold; }
-    @media (min-width: 768px) {
-      #footer div #footer-text {
-        display: block; } }
-    @media (min-width: 992px) {
-      #footer div #footer-text {
-        margin-left: auto;
-        margin-right: 80px; } }
+  @media (min-width: 768px) {
+    #footer div #footer-text {
+      display: block; } }
+  @media (min-width: 992px) {
+    #footer div #footer-text {
+      margin-left: auto;
+      margin-right: 80px; } }
 /* =============
     Section 1
 ============= */
@@ -697,7 +722,7 @@ ul {
       margin-top: 80px; } }
   @media (min-width: 992px) {
     #section-1 div {
-      height: 800px;
+      height: 700px;
       margin-top: 100px; } }
   @media (min-width: 1200px) {
     #section-1 div {
@@ -732,7 +757,7 @@ ul {
     Section 2
 ============= */
 #section-2 div {
-  margin: 40px 30px;
+  margin: 30px 15px;
   text-align: center; }
   @media (min-width: 768px) {
     #section-2 div {
@@ -742,7 +767,8 @@ ul {
       margin: 80px 0px; } }
   #section-2 div h2 {
     font-size: 2rem;
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    font-family: 'armata', sans-serif; }
     @media (min-width: 768px) {
       #section-2 div h2 {
         font-size: 2.5rem; } }
@@ -752,7 +778,9 @@ ul {
         padding-bottom: 20px; } }
   #section-2 div h3 {
     font-size: 1.25rem;
-    color: #B72426; }
+    color: #B72426;
+    padding: 0px 30px;
+    padding-top: 5px; }
     @media (min-width: 768px) {
       #section-2 div h3 {
         font-size: 1.375rem; } }
@@ -775,13 +803,14 @@ ul {
       line-height: 2rem;
       font-size: 1.25rem;
       text-align: justify;
+      font-family: 'armata', sans-serif;
       padding: 30px 10px; }
       #section-3 div p span {
         display: none; }
       @media (min-width: 768px) {
         #section-3 div p {
-          padding: 60px 30px;
-          line-height: 2.5rem;
+          padding: 60px 60px;
+          line-height: 2.75rem;
           font-size: 1.3125rem; }
           #section-3 div p span {
             display: inline !important; } }
@@ -790,6 +819,9 @@ ul {
           padding: 100px 130px;
           line-height: 3.125rem;
           font-size: 1.5625rem; } }
+      @media (min-width: 1200px) {
+        #section-3 div p {
+          padding: 100px 200px; } }
 /* =============
     Section 4
 ============= */
@@ -805,12 +837,12 @@ ul {
   @media (min-width: 768px) {
     #section-4 #s4-container #s4-content {
       display: grid;
-      grid-template-columns: 500px 1fr;
+      grid-template-columns: auto 40%;
       grid-template-areas: "img text";
       padding: 60px 0px; } }
   @media (min-width: 992px) {
     #section-4 #s4-container #s4-content {
-      padding: 100px 50px; } }
+      padding: 100px 0px; } }
   @media (min-width: 1200px) {
     #section-4 #s4-container #s4-content {
       padding: 100px 0px 100px 100px; } }
@@ -820,27 +852,32 @@ ul {
     background-position: center;
     background-size: cover;
     height: 400px; }
+    @media (min-width: 1200px) {
+      #section-4 #s4-container #s4-content aside {
+        width: 600px; } }
   #section-4 #s4-container #s4-content section {
     grid-area: text; }
     #section-4 #s4-container #s4-content section p {
       font-size: 1.125rem;
       line-height: 1.4375rem;
+      font-family: 'armata', sans-serif;
       text-align: justify;
       padding: 0px 60px;
-      padding-top: 30px; }
+      padding-top: 30px;
+      margin: 0px; }
       @media (min-width: 768px) {
         #section-4 #s4-container #s4-content section p {
-          padding: 100px 20px;
-          text-align: left; } }
+          padding: 120px 30px;
+          text-align: left;
+          line-height: 1.5625rem; } }
       @media (min-width: 992px) {
         #section-4 #s4-container #s4-content section p {
-          padding: 100px 50px;
-          max-width: 300px; } }
+          padding: 100px 80px; } }
       @media (min-width: 1200px) {
         #section-4 #s4-container #s4-content section p {
-          padding-left: 100px;
+          padding-left: 60px;
           padding-top: 130px;
-          padding-right: 0px; } }
+          padding-right: 130px; } }
 /* =============
     Section 5
 ============= */
@@ -859,10 +896,14 @@ ul {
       padding-bottom: 100px; } }
   #section-5 #s5-content #title-strip-ham {
     background-color: #FCC424;
-    padding: 30px 0px; }
+    padding: 20px 0px; }
+    @media (min-width: 768px) {
+      #section-5 #s5-content #title-strip-ham {
+        padding: 25px 0px; } }
     @media (min-width: 992px) {
       #section-5 #s5-content #title-strip-ham {
-        padding: 20px 0px; } }
+        padding: 20px 0px;
+        margin-bottom: 60px; } }
     #section-5 #s5-content #title-strip-ham h1 {
       text-align: center; }
       @media (min-width: 768px) {
@@ -871,14 +912,12 @@ ul {
       @media (min-width: 992px) {
         #section-5 #s5-content #title-strip-ham h1 {
           font-size: 3.4375rem; } }
-    @media (min-width: 992px) {
-      #section-5 #s5-content #title-strip-ham {
-        margin-bottom: 60px; } }
   @media (min-width: 1200px) {
     #section-5 #s5-content #drivers {
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
-      grid-template-areas: "verstappen ham bottas"; } }
+      grid-template-columns: auto 450px 450px 450px auto;
+      grid-template-areas: ". verstappen ham bottas .";
+      grid-gap: 20px; } }
   #section-5 #s5-content #drivers #Hamilton {
     grid-area: ham;
     display: grid;
@@ -887,13 +926,16 @@ ul {
     @media (min-width: 768px) {
       #section-5 #s5-content #drivers #Hamilton {
         grid-template-columns: 50px 350px auto 50px;
-        grid-template-rows: 1fr 100px;
+        grid-template-rows: 1fr 110px;
         grid-template-areas: ". img table ." ". txt table ."; } }
     @media (min-width: 992px) {
       #section-5 #s5-content #drivers #Hamilton {
-        grid-template-columns: auto 360px auto;
-        grid-template-rows: 300px auto auto;
-        grid-template-areas: ". img ." ". txt ." ". table ."; } }
+        grid-template-columns: auto 500px auto;
+        grid-template-rows: auto auto;
+        grid-template-areas: ". ham-top ." ". table-bottom ."; } }
+    @media (min-width: 1200px) {
+      #section-5 #s5-content #drivers #Hamilton {
+        padding-top: 13px; } }
     #section-5 #s5-content #drivers #Hamilton #ham-left {
       grid-area: img;
       background-image: url("../img/section-5/lewis.png");
@@ -910,10 +952,14 @@ ul {
           height: 300px; } }
       @media (min-width: 992px) {
         #section-5 #s5-content #drivers #Hamilton #ham-left {
-          margin-top: 0px; } }
-      @media (min-width: 1200px) {
-        #section-5 #s5-content #drivers #Hamilton #ham-left {
-          background-size: auto; } }
+          display: none;
+          margin-bottom: -10px; } }
+    #section-5 #s5-content #drivers #Hamilton #ham-top-desktop {
+      display: none; }
+      @media (min-width: 992px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-top-desktop {
+          display: block !important;
+          grid-area: ham-top; } }
     #section-5 #s5-content #drivers #Hamilton #ham-right {
       grid-area: txt;
       background-color: #fff;
@@ -921,13 +967,19 @@ ul {
       text-align: center;
       margin-top: 30px;
       padding-top: 30px; }
+      @media (min-width: 992px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-right {
+          display: none; } }
       #section-5 #s5-content #drivers #Hamilton #ham-right p {
         font-size: 1.25rem;
-        line-height: 30px; }
+        line-height: 30px;
+        line-height: 1.375rem;
+        padding-top: 5px; }
         @media (min-width: 768px) {
           #section-5 #s5-content #drivers #Hamilton #ham-right p {
             font-size: 1.625rem;
-            margin-top: 20px; } }
+            margin-top: 20px;
+            padding-bottom: 10px; } }
         @media (min-width: 992px) {
           #section-5 #s5-content #drivers #Hamilton #ham-right p {
             margin-top: 30px; } }
@@ -962,17 +1014,29 @@ ul {
           display: none; } }
     #section-5 #s5-content #drivers #Hamilton #ham-table {
       display: none;
-      padding: 20px;
-      padding: 30px 30px 0px 30px; }
+      padding: 20px; }
+      @media (min-width: 768px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-table {
+          padding: 30px 30px 0px 30px;
+          font-size: 1.3125rem; } }
+      @media (min-width: 992px) {
+        #section-5 #s5-content #drivers #Hamilton #ham-table {
+          padding: 30px 0px 0px 75px; } }
       #section-5 #s5-content #drivers #Hamilton #ham-table img {
         padding-bottom: 40px; }
+        @media (min-width: 768px) {
+          #section-5 #s5-content #drivers #Hamilton #ham-table img {
+            padding-bottom: 30px; } }
         @media (min-width: 992px) {
           #section-5 #s5-content #drivers #Hamilton #ham-table img {
             display: none; } }
       #section-5 #s5-content #drivers #Hamilton #ham-table table {
         width: 300px; }
         #section-5 #s5-content #drivers #Hamilton #ham-table table td {
-          line-height: 1.625rem; }
+          line-height: 1.875rem; }
+          @media (min-width: 768px) {
+            #section-5 #s5-content #drivers #Hamilton #ham-table table td {
+              padding-left: 5px; } }
           @media (min-width: 992px) {
             #section-5 #s5-content #drivers #Hamilton #ham-table table td {
               line-height: 2.1875rem;
@@ -991,47 +1055,31 @@ ul {
       @media (min-width: 992px) {
         #section-5 #s5-content #drivers #Hamilton #ham-table {
           margin-top: 0px;
-          padding-bottom: 10px; } }
+          padding-bottom: 10px;
+          grid-area: table-bottom; } }
   #section-5 #s5-content #drivers #Bottas {
     display: none; }
     @media (min-width: 1200px) {
       #section-5 #s5-content #drivers #Bottas {
-        grid-area: bottas;
-        display: grid !important;
-        grid-template-rows: 300px 130px;
-        grid-template-areas: ". img ." ". txt ."; } }
-    #section-5 #s5-content #drivers #Bottas #bottas-top {
-      grid-area: img; }
-      #section-5 #s5-content #drivers #Bottas #bottas-top #bottas-bg {
-        background-color: #D9D9D9;
-        width: 360px;
-        height: 130px; }
-        #section-5 #s5-content #drivers #Bottas #bottas-top #bottas-bg #bottas-img {
-          background-image: url("../img/section-5/lewis.png");
-          background-position: center;
-          height: 290px;
-          background-repeat: no-repeat; }
-    #section-5 #s5-content #drivers #Bottas #bottas-bottom {
-      grid-area: txt;
-      background-color: #fff;
-      color: #000;
-      width: 360px; }
+        display: block !important;
+        grid-area: bottas; } }
   #section-5 #s5-content #drivers #Verstappen {
     display: none; }
     @media (min-width: 1200px) {
       #section-5 #s5-content #drivers #Verstappen {
         display: block !important;
         grid-area: verstappen; } }
-    #section-5 #s5-content #drivers #Verstappen #vers-bottom {
-      background-color: #fff;
-      color: #000;
-      width: 360px; }
   #section-5 #s5-content .white-button {
-    margin-top: 30px; }
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 10px; }
     @media (min-width: 768px) {
       #section-5 #s5-content .white-button {
-        margin-top: 35px; } }
+        margin-top: 40px; } }
     @media (min-width: 992px) {
+      #section-5 #s5-content .white-button {
+        margin-top: 25px; } }
+    @media (min-width: 1200px) {
       #section-5 #s5-content .white-button {
         display: none; } }
 /* =============
@@ -1052,6 +1100,9 @@ ul {
       grid-template-columns: 50% 50%;
       grid-template-areas: "text img";
       padding: 60px 0px; } }
+  @media (min-width: 992px) {
+    #section-6 > div {
+      padding: 80px 0px; } }
   #section-6 > div #section-6-img {
     background-image: url("../img/section-6/man-in-car.jpg");
     background-position: center;
@@ -1098,7 +1149,8 @@ ul {
       @media (min-width: 768px) {
         #section-6 > div #section-6-text #circuit-bottom-txt p {
           font-size: 1.3125rem;
-          line-height: 1.4375rem; } }
+          line-height: 1.4375rem;
+          padding-bottom: 15px; } }
       @media (min-width: 992px) {
         #section-6 > div #section-6-text #circuit-bottom-txt p {
           line-height: 1.6875rem; } }
@@ -1122,10 +1174,10 @@ ul {
   margin-bottom: 530px; }
   @media (min-width: 768px) {
     #section-7 {
-      margin-bottom: 500px; } }
+      margin-bottom: 480px; } }
   @media (min-width: 992px) {
     #section-7 {
-      margin-bottom: 550px;
+      margin-bottom: 500px;
       margin-top: 30px; } }
   #section-7 div #bg-7 {
     background-image: url("../img/section-7/racing-car.jpg");
@@ -1140,7 +1192,10 @@ ul {
     @media (min-width: 992px) {
       #section-7 div #bg-7 {
         height: 500px;
-        background-position-y: -320px; } }
+        background-position-y: -280px; } }
+    @media (min-width: 992px) {
+      #section-7 div #bg-7 {
+        background-position-y: -500px; } }
     #section-7 div #bg-7 #title-strip-tix {
       padding-top: 55px;
       padding-bottom: 55px; }
@@ -1149,8 +1204,12 @@ ul {
         color: #fff;
         background-color: #E92626;
         padding: 20px 0px 20px 0px; }
+        @media (min-width: 768px) {
+          #section-7 div #bg-7 #title-strip-tix h1 {
+            padding: 25px 0px; } }
         @media (min-width: 992px) {
           #section-7 div #bg-7 #title-strip-tix h1 {
+            padding: 20px 0px;
             font-size: 3.4375rem; } }
       @media (min-width: 992px) {
         #section-7 div #bg-7 #title-strip-tix {
@@ -1168,11 +1227,11 @@ ul {
     @media (min-width: 768px) {
       #section-7 div #table-grid #table-and-button {
         margin: 0px 80px;
-        padding: 50px; } }
+        padding: 40px; } }
     @media (min-width: 992px) {
       #section-7 div #table-grid #table-and-button {
         margin: 0px;
-        padding: 50px; } }
+        padding: 40px 50px; } }
     #section-7 div #table-grid #table-and-button #tickets-table {
       color: #fff; }
       #section-7 div #table-grid #table-and-button #tickets-table td {
@@ -1224,50 +1283,79 @@ ul {
 ============= */
 #section-8 #section-8-content {
   background-color: #71D7FF;
-  padding: 30px 10px;
+  padding: 30px 10px 20px 10px;
   margin-top: 30px; }
   @media (min-width: 768px) {
     #section-8 #section-8-content {
-      padding: 0px; } }
+      padding: 0px;
+      background-color: #fff; } }
   #section-8 #section-8-content #section-8-grid {
     display: grid;
-    grid-template-columns: 20% 80%;
+    grid-template-columns: 30% 70%;
     grid-template-rows: auto auto;
     grid-template-areas: "vip ." ". text"; }
     @media (min-width: 768px) {
       #section-8 #section-8-content #section-8-grid {
         grid-template-rows: 1fr;
-        grid-template-columns: 30% 70%;
+        grid-template-columns: auto 63%;
         grid-template-rows: 215px;
-        grid-template-areas: "vip text"; } }
+        grid-template-areas: "vip text";
+        grid-gap: 20px; } }
+    @media (min-width: 992px) {
+      #section-8 #section-8-content #section-8-grid {
+        grid-template-columns: auto 250px 650px auto;
+        grid-template-areas: ". vip text .";
+        grid-gap: 0px; } }
     #section-8 #section-8-content #section-8-grid #vip-title {
       grid-area: vip;
-      padding-bottom: 10px; }
+      padding-bottom: 10px;
+      padding-left: 10px; }
       @media (min-width: 768px) {
         #section-8 #section-8-content #section-8-grid #vip-title {
           text-align: center;
-          padding-top: 90px;
-          border-right: 20px solid #fff; } }
+          padding-top: 80px;
+          background-color: #71D7FF; } }
+      @media (min-width: 992px) {
+        #section-8 #section-8-content #section-8-grid #vip-title h1 {
+          font-size: 45px; } }
     #section-8 #section-8-content #section-8-grid #vip-body-text {
       grid-area: text;
-      padding-bottom: 30px; }
+      padding-bottom: 20px; }
       #section-8 #section-8-content #section-8-grid #vip-body-text p {
-        line-height: 20px; }
+        line-height: 20px;
+        font-family: 'armata', sans-serif; }
         @media (min-width: 768px) {
           #section-8 #section-8-content #section-8-grid #vip-body-text p {
             font-size: 1.125rem;
             line-height: 1.5rem;
-            padding: 30px; } }
+            padding: 30px 50px 0px 50px; } }
+        @media (min-width: 992px) {
+          #section-8 #section-8-content #section-8-grid #vip-body-text p {
+            grid-area: vip-text-left;
+            padding: 40px 0px; } }
       @media (min-width: 768px) {
         #section-8 #section-8-content #section-8-grid #vip-body-text {
           text-align: justify;
-          padding: 20px 30px 20px 30px; } }
-  #section-8 #section-8-content .white-button {
-    padding-bottom: 10px; }
-    @media (min-width: 768px) {
-      #section-8 #section-8-content .white-button {
-        padding-bottom: 30px;
-        display: flex; } }
+          background-color: #71D7FF; } }
+      @media (min-width: 992px) {
+        #section-8 #section-8-content #section-8-grid #vip-body-text {
+          display: grid;
+          grid-template-columns: 380px auto;
+          grid-template-areas: "vip-text-left btn-right"; } }
+      #section-8 #section-8-content #section-8-grid #vip-body-text .white-button {
+        padding-top: 35px;
+        text-align: left; }
+        @media (min-width: 768px) {
+          #section-8 #section-8-content #section-8-grid #vip-body-text .white-button {
+            text-align: right;
+            padding-top: 5px;
+            padding-right: 50px; } }
+        @media (min-width: 992px) {
+          #section-8 #section-8-content #section-8-grid #vip-body-text .white-button {
+            grid-area: btn-right;
+            padding-top: 90px;
+            padding-left: 30px;
+            text-align: center; } }
 /* =============
     Section 9
 ============= */
@@ -1289,12 +1377,14 @@ ul {
       #section-9 ul {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 465px 230px;
-        grid-template-areas: "g1 g1 g1" "g4 g2 g3"; } }
+        grid-template-areas: "g1 g1 g1" "g4 g2 g3";
+        grid-gap: 16px; } }
     @media (min-width: 992px) {
       #section-9 ul {
         grid-template-columns: 4fr 2fr 3fr;
         grid-template-rows: 300px 250px 300px;
-        grid-template-areas: "g1 g1 g3"  "g1 g1 g2"  "g4 g5 g2"; } }
+        grid-template-areas: "g1 g1 g3"  "g1 g1 g2"  "g4 g5 g2";
+        grid-gap: 20px; } }
     @media (min-width: 1200px) {
       #section-9 ul {
         grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -1313,7 +1403,7 @@ ul {
         @media (min-width: 768px) {
           #section-9 ul #gallery-1 p {
             font-size: 2.5rem;
-            line-height: 3.125rem;
+            line-height: 3.75rem;
             padding: 40px 150px; } }
         @media (min-width: 992px) {
           #section-9 ul #gallery-1 p {

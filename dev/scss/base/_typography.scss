@@ -56,6 +56,13 @@ p{
     font-weight: 300;
 }
 
+#header{
+    font-family: default-gothic, sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: rem-calc(23);
+}
+
 .white-button{
     
     text-align: center;
@@ -129,11 +136,9 @@ p{
 .sold-out-button{
 
     text-align: center;
-    border: solid .5px $white;
+    border: solid .25px $white;
     border-radius: 2px;
     padding: 8px 2px;
-
-    
 
     a{
         font-family: default-gothic, sans-serif;
@@ -141,14 +146,9 @@ p{
         font-style: normal;
         font-size: rem-calc(18);
        
-
-
         background-color: $gray;
         color: $white;
-        
-        
-        
-        
+
     }
 
     a:link,
@@ -162,8 +162,6 @@ p{
         background-color: $gray;
         text-decoration: none;
     }
-
-
 
 }
 
@@ -214,6 +212,19 @@ p{
 
         padding-top: 15px;
         padding-bottom: 35px;
+    }
+
+    .bold-text-5{
+        font-family: default-gothic, sans-serif;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .text-right-5{
+        font-family: default-gothic, sans-serif;
+        font-weight: 300;
+        font-style: normal;
+        text-align: right;
     }
 }
 
